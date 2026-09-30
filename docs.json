@@ -1,0 +1,131 @@
+{
+	"$schema": "https://mintlify.com/docs.json",
+	"theme": "mint",
+	"name": "Cohort",
+	"description": "Cohort help center: guides for education center staff, teachers and students.",
+	"colors": {
+		"primary": "#2A4FDB",
+		"light": "#7C9DF0",
+		"dark": "#2A4FDB"
+	},
+	"logo": {
+		"light": "/images/brand/logo-light.png",
+		"dark": "/images/brand/logo-dark.png"
+	},
+	"favicon": "/images/brand/favicon.svg",
+	"fonts": {
+		"family": "Inter"
+	},
+	"icons": {
+		"library": "lucide"
+	},
+	"metadata": {
+		"timestamp": true
+	},
+	"navigation": {
+		"languages": [
+			{
+				"language": "uz",
+				"default": true,
+				"navbar": {
+					"links": [{ "label": "Veb-sayt", "href": "https://cohort.uz/uz" }]
+				},
+				"tabs": [
+					{
+						"tab": "Boshlash",
+						"icon": "rocket",
+						"groups": [
+							{
+								"group": "Umumiy",
+								"pages": [
+									"uz/index",
+									"uz/getting-started/apps-and-roles",
+									"uz/getting-started/sign-in"
+								]
+							}
+						]
+					},
+					{
+						"tab": "Xodimlar paneli",
+						"icon": "layout-dashboard",
+						"groups": [
+							{
+								"group": "Oʻquvchilar",
+								"pages": ["uz/admin/students/add-a-student"]
+							}
+						]
+					}
+				]
+			},
+			{
+				"language": "ru",
+				"navbar": {
+					"links": [{ "label": "Сайт", "href": "https://cohort.uz/ru" }]
+				},
+				"tabs": [
+					{
+						"tab": "Начало работы",
+						"icon": "rocket",
+						"groups": [
+							{
+								"group": "Обзор",
+								"pages": [
+									"ru/index",
+									"ru/getting-started/apps-and-roles",
+									"ru/getting-started/sign-in"
+								]
+							}
+						]
+					},
+					{
+						"tab": "Панель сотрудника",
+						"icon": "layout-dashboard",
+						"groups": [
+							{
+								"group": "Ученики",
+								"pages": ["ru/admin/students/add-a-student"]
+							}
+						]
+					}
+				]
+			},
+			{
+				"language": "en",
+				"navbar": {
+					"links": [{ "label": "Website", "href": "https://cohort.uz/en" }]
+				},
+				"tabs": [
+					{
+						"tab": "Get started",
+						"icon": "rocket",
+						"groups": [
+							{
+								"group": "Overview",
+								"pages": [
+									"en/index",
+									"en/getting-started/apps-and-roles",
+									"en/getting-started/sign-in"
+								]
+							}
+						]
+					},
+					{
+						"tab": "Staff console",
+						"icon": "layout-dashboard",
+						"groups": [
+							{
+								"group": "Students",
+								"pages": ["en/admin/students/add-a-student"]
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"footer": {
+		"socials": {
+			"website": "https://cohort.uz"
+		}
+	}
+}

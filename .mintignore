@@ -1,0 +1,7 @@
+# Mintlify publishes every .md/.mdx it finds. It already skips .git, .github, .claude,
+# node_modules, README.md, CONTRIBUTING.md and CHANGELOG.md — everything else internal
+# must be listed here or it goes live on the public help center.
+CLAUDE.md
+AGENTS.md
+contributing/
+scripts/

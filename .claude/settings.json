@@ -1,0 +1,21 @@
+{
+	"permissions": {
+		"additionalDirectories": [
+			"../cohort-ui",
+			"../cohort-be"
+		],
+		"allow": [
+			"Bash(pnpm check*)",
+			"Bash(pnpm format)",
+			"Bash(node scripts/check-i18n.mjs*)",
+			"Bash(node scripts/check-labels.mjs*)",
+			"Bash(pnpm exec mint validate)",
+			"Bash(pnpm exec mint broken-links *)",
+			"Bash(pnpm exec mint a11y *)"
+		],
+		"deny": [
+			"Edit(../cohort-ui/**)",
+			"Edit(../cohort-be/**)"
+		]
+	}
+}

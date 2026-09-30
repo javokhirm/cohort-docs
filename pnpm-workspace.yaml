@@ -1,0 +1,15 @@
+# sharp does mint's image processing; scarf is install telemetry; keytar is only for `mint login`.
+allowBuilds:
+  '@scarf/scarf': false
+  keytar: false
+  sharp: true
+minimumReleaseAgeExclude:
+  - '@mintlify/cli@4.0.1558'
+  - '@mintlify/common@1.0.1186'
+  - '@mintlify/link-rot@3.0.1392'
+  - '@mintlify/mdx@4.0.7'
+  - '@mintlify/prebuild@1.0.1344'
+  - '@mintlify/previewing@4.0.1416'
+  - '@mintlify/scraping@4.0.1056'
+  - '@mintlify/validation@0.1.879'
+  - mint@4.2.955

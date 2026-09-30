@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+.mintlify/
+tests/mint-test/
+.claude/settings.local.json

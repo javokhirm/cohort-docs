@@ -1,0 +1,23 @@
+{
+	"name": "cohort-docs",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"packageManager": "pnpm@11.17.0",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"dev": "mint dev --port 5179",
+		"check": "pnpm check:i18n && pnpm check:labels && pnpm check:build && pnpm check:links",
+		"check:i18n": "node scripts/check-i18n.mjs",
+		"check:labels": "node scripts/check-labels.mjs",
+		"check:build": "mint validate",
+		"check:links": "mint broken-links --check-anchors --check-redirects --check-snippets",
+		"check:a11y": "mint a11y",
+		"format": "mint format"
+	},
+	"devDependencies": {
+		"mint": "4.2.955"
+	}
+}

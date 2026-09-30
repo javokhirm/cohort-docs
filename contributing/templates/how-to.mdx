@@ -1,0 +1,43 @@
+---
+title: "Add a student"
+description: "One sentence: what the reader gets done on this page. Shown in search results."
+---
+
+{/* HOW-TO: one task, one page. Title = the task (en: imperative, ru: verbal noun, uz: verbal noun).
+    Copy this file to <locale>/<section>/<slug>.mdx in all three locales, then add it to docs.json. */}
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+One or two sentences: when you'd do this and what happens afterwards. Name the roles that
+can do it by default in plain text ("By default, owners and admins can …"), not in a snippet
+prop: MDX expressions aren't in the page's HTML, so search and the AI assistant can't see them.
+
+<RoleHint />
+
+## Before you start
+
+- Only list real prerequisites (e.g. "a branch exists"). Link to the page that covers each one.
+
+## Steps
+
+<Steps>
+  <Step title="Open the Students page">
+    In the sidebar, select **Students**.
+  </Step>
+  <Step title="Fill in the form">
+    Select **Add student** and fill in the required fields.
+
+    {/* Screenshot only if the reader can't find the thing from the text alone.
+        Path mirrors the page: /images/<locale>/<section>/<slug>-<what>.png */}
+    <Frame>
+      <img src="/images/en/admin/add-a-student-form.png" alt="The Add student form with the first name, last name and branch filled in" />
+    </Frame>
+  </Step>
+  <Step title="Save">
+    Select **Save**. The student appears at the top of the list.
+  </Step>
+</Steps>
+
+## What's next
+
+- [Link text that says where it goes](/en/admin/...)
