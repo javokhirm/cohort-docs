@@ -39,8 +39,9 @@
 								"group": "Umumiy",
 								"pages": [
 									"uz/index",
-									"uz/getting-started/apps-and-roles",
-									"uz/getting-started/sign-in"
+									"uz/getting-started/sign-in",
+									"uz/getting-started/first-time-setup",
+									"uz/getting-started/apps-and-roles"
 								]
 							}
 						]
@@ -52,6 +53,30 @@
 							{
 								"group": "Oʻquvchilar",
 								"pages": ["uz/admin/students/add-a-student"]
+							},
+							{
+								"group": "Xodimlar va HR",
+								"pages": ["uz/admin/staff/add-a-staff-member"]
+							},
+							{
+								"group": "Kurslar",
+								"pages": ["uz/admin/courses/add-a-course"]
+							},
+							{
+								"group": "Xonalar",
+								"pages": ["uz/admin/rooms/add-a-room"]
+							},
+							{
+								"group": "Guruhlar",
+								"pages": ["uz/admin/groups/add-a-group"]
+							},
+							{
+								"group": "Toʻlov rejalari",
+								"pages": ["uz/admin/fee-plans/add-a-fee-plan"]
+							},
+							{
+								"group": "Filiallar",
+								"pages": ["uz/admin/branches/add-a-branch"]
 							}
 						]
 					}
@@ -71,8 +96,9 @@
 								"group": "Обзор",
 								"pages": [
 									"ru/index",
-									"ru/getting-started/apps-and-roles",
-									"ru/getting-started/sign-in"
+									"ru/getting-started/sign-in",
+									"ru/getting-started/first-time-setup",
+									"ru/getting-started/apps-and-roles"
 								]
 							}
 						]
@@ -84,6 +110,30 @@
 							{
 								"group": "Ученики",
 								"pages": ["ru/admin/students/add-a-student"]
+							},
+							{
+								"group": "Сотрудники и HR",
+								"pages": ["ru/admin/staff/add-a-staff-member"]
+							},
+							{
+								"group": "Курсы",
+								"pages": ["ru/admin/courses/add-a-course"]
+							},
+							{
+								"group": "Кабинеты",
+								"pages": ["ru/admin/rooms/add-a-room"]
+							},
+							{
+								"group": "Группы",
+								"pages": ["ru/admin/groups/add-a-group"]
+							},
+							{
+								"group": "Тарифные планы",
+								"pages": ["ru/admin/fee-plans/add-a-fee-plan"]
+							},
+							{
+								"group": "Филиалы",
+								"pages": ["ru/admin/branches/add-a-branch"]
 							}
 						]
 					}
@@ -103,8 +153,9 @@
 								"group": "Overview",
 								"pages": [
 									"en/index",
-									"en/getting-started/apps-and-roles",
-									"en/getting-started/sign-in"
+									"en/getting-started/sign-in",
+									"en/getting-started/first-time-setup",
+									"en/getting-started/apps-and-roles"
 								]
 							}
 						]
@@ -116,6 +167,30 @@
 							{
 								"group": "Students",
 								"pages": ["en/admin/students/add-a-student"]
+							},
+							{
+								"group": "Staff & HR",
+								"pages": ["en/admin/staff/add-a-staff-member"]
+							},
+							{
+								"group": "Courses",
+								"pages": ["en/admin/courses/add-a-course"]
+							},
+							{
+								"group": "Rooms",
+								"pages": ["en/admin/rooms/add-a-room"]
+							},
+							{
+								"group": "Groups",
+								"pages": ["en/admin/groups/add-a-group"]
+							},
+							{
+								"group": "Fee Plans",
+								"pages": ["en/admin/fee-plans/add-a-fee-plan"]
+							},
+							{
+								"group": "Branches",
+								"pages": ["en/admin/branches/add-a-branch"]
 							}
 						]
 					}

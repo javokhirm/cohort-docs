@@ -1,0 +1,52 @@
+---
+title: "Guruh qoʻshish"
+description: "Kurs, oʻqituvchi, xona va haftalik jadvalga ega guruh yarating — keyin unga oʻquvchilarni qabul qilasiz."
+icon: "calendar-plus"
+---
+
+import RoleHint from "/snippets/uz/role-hint.mdx";
+
+Standart holatda guruhni egasi, administrator va menejer qoʻsha oladi.
+
+<RoleHint />
+
+## Boshlashdan oldin
+
+- Guruh uchun mavjud faol kurs kerak. Agar hali yaratmagan boʻlsangiz, [kurs qoʻshish](/uz/admin/courses/add-a-course) sahifasiga qarang.
+
+## Guruhni qoʻshing
+
+<Steps>
+  <Step title="Formani oching">
+    Yon menyuda **Guruhlar** boʻlimini oching, soʻng **Guruh yaratish** tugmasini bosing.
+  </Step>
+  <Step title="Guruh nomini, filialini va kursini belgilang">
+    **Guruh nomi**ni kiriting, guruh uchun **Filial** va **Kurs**ni tanlang.
+
+    Agar tanlangan filialda faol kurs boʻlmasa, Cohort "Bu filialda faol kurs yoʻq — guruh yaratib boʻlmaydi." xabarini va **Kurs yaratish** havolasini koʻrsatadi.
+
+    Guruh yaratilgandan keyin filial va kursni oʻzgartirib boʻlmaydi.
+  </Step>
+  <Step title="Oʻqituvchi, xona va sigʻimni belgilang">
+    **Oʻqituvchi**ni tanlang yoki keyinroq biriktirish uchun **Biriktirilmagan** holida qoldiring. **Xona**ni tanlang — faqat tanlangan filialdagi xonalar koʻrsatiladi — yoki **Xona yoʻq** holida qoldiring. Oʻquvchilar sonini cheklamoqchi boʻlsangiz, **Sigʻimi**ni kiriting.
+  </Step>
+  <Step title="Jadvalni belgilang">
+    **Kunlar** maydonida guruh oʻtadigan kunlarni belgilang — masalan, **Du**, **Ch** va **Ju** — soʻng **Boshlanish vaqti** va **Tugash vaqti**ni kiriting. **Boshlanish sanasi** va **Tugash sanasi**ni ham belgilang.
+
+    <Note>
+      Cohort guruh darslarini faqat ikkala sana belgilangandan keyin yaratadi. Ulardan birortasini boʻsh qoldirsangiz, guruh jadvalda birorta ham darssiz saqlanadi — oʻqituvchi uchun davomat belgilaydigan hech narsa boʻlmaydi — toki siz sanalarni keyinroq guruh sahifasidan qoʻshmaguningizcha. Sanalar ostida Cohort bu jadval nechta dars yaratishini koʻrsatib turadi; 0 koʻrsatilsa, demak sanalardan biri hali belgilanmagan.
+    </Note>
+  </Step>
+  <Step title="Baholash shkalasini belgilang">
+    **Baholash shkalasi** boʻlimida Cohort standart holatda 10 balllik **Ball** shkalasini ishlatadi — buni faqat shu guruhni boshqacha baholasangiz oʻzgartiring. **Shkala turi**ni tanlang — **Ball**, **Foiz** yoki **Harf**. Raqamli shkalalar uchun **Maksimal ball** yoki **Maksimum (%)**ni kiriting; **Ball** turida **Yarim ballarga ruxsat berish**ni ham yoqishingiz mumkin. Bu guruhda oʻqituvchilar kundalik baholarni qanday qoʻyishini belgilaydi.
+  </Step>
+  <Step title="Saqlang">
+    <Note>
+      Agar tanlangan oʻqituvchi yoki xona shu sana oraligʻida boshqa guruhga band boʻlsa, Cohort guruhni saqlamaydi va toʻqnashgan sana va vaqtni koʻrsatib **Jadvalda toʻqnashuv** xatosini chiqaradi. Boshqa oʻqituvchi, xona, vaqt yoki sana oraligʻini tanlab, qayta urinib koʻring.
+    </Note>
+  </Step>
+</Steps>
+
+## Keyingi qadam
+
+Guruh tayyor boʻlgach, [oʻquvchi qoʻshing](/uz/admin/students/add-a-student) va uni shu guruhga qabul qiling. Yoki [yangi markazni sozlash](/uz/getting-started/first-time-setup) sahifasiga qayting.
