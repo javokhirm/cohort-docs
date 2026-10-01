@@ -1,0 +1,49 @@
+---
+title: "Enroll students"
+description: "Add one or more active students to a group, and set the date that starts their billing."
+icon: "user-plus"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+By default, owners, admins and managers can enroll students.
+
+<RoleHint />
+
+## Before you start
+
+- The group must already exist. If you haven't created one yet, see [add a group](/en/admin/groups/add-a-group).
+- Each student must already exist and be active. If you haven't added them yet, see [add a student](/en/admin/students/add-a-student).
+
+## Enroll the students
+
+<Steps>
+  <Step title="Open the group">
+    In the sidebar, select **Groups**, then select the group. It opens on the **Students** tab.
+  </Step>
+  <Step title="Start enrolling">
+    Select **Enroll students**.
+  </Step>
+  <Step title="Search and select students">
+    Search by name or code, then check each student to add. Only active students appear in the list, and students already in this group don't.
+  </Step>
+  <Step title="Set the start date">
+    Choose a **Start date**. It's the day the student actually started, and it sets their billing anniversary — back-date it if you're adding someone who's already been attending.
+
+    <Note>
+      The date can't be more than a month ahead, and it can't be so far in the past that it would skip billing cycles the student would never be invoiced for. Pick one outside that range and Cohort blocks the save and names the earliest and latest valid dates.
+    </Note>
+  </Step>
+  <Step title="Save">
+    Select **Enroll**. The students appear on the roster, and a toast confirms how many were enrolled.
+
+    <Note>
+      Groups have a seat limit. If enrolling would put the group over its **Capacity**, Cohort blocks the save and shows "Group is at capacity — cannot enroll more students."
+    </Note>
+  </Step>
+</Steps>
+
+## What's next
+
+- [Suspend, drop or reactivate an enrollment](/en/admin/groups/suspend-drop-or-reactivate-an-enrollment)
+- [Complete or cancel a group](/en/admin/groups/complete-or-cancel-a-group)

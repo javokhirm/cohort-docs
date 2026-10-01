@@ -81,7 +81,13 @@
 							},
 							{
 								"group": "Guruhlar",
-								"pages": ["uz/admin/groups/add-a-group"]
+								"pages": [
+									"uz/admin/groups/add-a-group",
+									"uz/admin/groups/enroll-students",
+									"uz/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+									"uz/admin/groups/complete-or-cancel-a-group",
+									"uz/admin/groups/grading-scales"
+								]
 							},
 							{
 								"group": "Toʻlov rejalari",
@@ -151,7 +157,13 @@
 							},
 							{
 								"group": "Группы",
-								"pages": ["ru/admin/groups/add-a-group"]
+								"pages": [
+									"ru/admin/groups/add-a-group",
+									"ru/admin/groups/enroll-students",
+									"ru/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+									"ru/admin/groups/complete-or-cancel-a-group",
+									"ru/admin/groups/grading-scales"
+								]
 							},
 							{
 								"group": "Тарифные планы",
@@ -221,7 +233,13 @@
 							},
 							{
 								"group": "Groups",
-								"pages": ["en/admin/groups/add-a-group"]
+								"pages": [
+									"en/admin/groups/add-a-group",
+									"en/admin/groups/enroll-students",
+									"en/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+									"en/admin/groups/complete-or-cancel-a-group",
+									"en/admin/groups/grading-scales"
+								]
 							},
 							{
 								"group": "Fee Plans",

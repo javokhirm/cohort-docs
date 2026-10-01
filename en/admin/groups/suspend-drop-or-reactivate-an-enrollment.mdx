@@ -1,0 +1,77 @@
+---
+title: "Suspend, drop or reactivate an enrollment"
+description: "Pause a student's place in a group, remove them for good, or restore one you paused."
+icon: "user-minus"
+keywords:
+  - "unenroll"
+  - "withdraw"
+  - "remove a student"
+  - "pause enrollment"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+By default, owners and admins can suspend, drop or reactivate an enrollment.
+
+<RoleHint />
+
+## Before you start
+
+- The student must already be enrolled in the group. See [enroll students](/en/admin/groups/enroll-students).
+
+## Suspend an enrollment
+
+Use this to pause a student's place without giving up their seat — for example, while they're away for a few weeks.
+
+<Steps>
+  <Step title="Open the student's row">
+    In the sidebar, select **Groups**, select the group, then on the **Students** tab, select the ⋯ button next to the student.
+  </Step>
+  <Step title="Suspend">
+    Select **Suspend**. Confirm or change the **Date suspended** — it can be backdated to any day on or after the student's start date, but never into the future.
+  </Step>
+  <Step title="Confirm">
+    Select **Suspend**.
+
+    <Note>
+      A suspended student keeps their seat — it still counts against the group's **Capacity** and blocks enrolling someone else in their place. From the date you set, they drop off the class schedule and attendance.
+    </Note>
+  </Step>
+</Steps>
+
+## Drop a student
+
+Use this when a student is leaving the group for good.
+
+<Steps>
+  <Step title="Open the student's row">
+    On the group's **Students** tab, select the ⋯ button next to the student.
+  </Step>
+  <Step title="Drop">
+    Select **Drop**. In the **Drop student** dialog, enter a **Reason** — it's required — and confirm or change the **Date left**, bounded the same way as suspending.
+  </Step>
+  <Step title="Confirm">
+    Select **Drop student**.
+
+    <Warning>
+      Dropping a student frees their seat, but Cohort has no undo for it. To bring them back later, [enroll them](/en/admin/groups/enroll-students) again.
+    </Warning>
+  </Step>
+</Steps>
+
+## Reactivate an enrollment
+
+Only a suspended enrollment can be reactivated — a dropped one can't, since dropping is final.
+
+<Steps>
+  <Step title="Open the student's row">
+    On the group's **Students** tab, select the ⋯ button next to the suspended student.
+  </Step>
+  <Step title="Reactivate">
+    Select **Reactivate**, then confirm by selecting **Reactivate** again. No reason or date is needed — their seat was never released.
+  </Step>
+</Steps>
+
+## What's next
+
+- [Complete or cancel a group](/en/admin/groups/complete-or-cancel-a-group)

@@ -1,0 +1,49 @@
+---
+title: "Oʻquvchilarni qabul qilish"
+description: "Guruhga bir yoki bir nechta faol oʻquvchini qoʻshing va ularning billing hisobi boshlanadigan sanani belgilang."
+icon: "user-plus"
+---
+
+import RoleHint from "/snippets/uz/role-hint.mdx";
+
+Standart holatda oʻquvchilarni egasi, administrator va menejer qabul qila oladi.
+
+<RoleHint />
+
+## Boshlashdan oldin
+
+- Guruh allaqachon mavjud boʻlishi kerak. Agar hali yaratmagan boʻlsangiz, [guruh qoʻshish](/uz/admin/groups/add-a-group) sahifasiga qarang.
+- Har bir oʻquvchi allaqachon mavjud va faol boʻlishi kerak. Agar hali qoʻshmagan boʻlsangiz, [oʻquvchi qoʻshish](/uz/admin/students/add-a-student) sahifasiga qarang.
+
+## Oʻquvchilarni qabul qiling
+
+<Steps>
+  <Step title="Guruhni oching">
+    Yon menyuda **Guruhlar** boʻlimini oching, soʻng guruhni tanlang. U **Oʻquvchilar** boʻlimida ochiladi.
+  </Step>
+  <Step title="Qabulni boshlang">
+    **Oʻquvchilarni qabul qilish** tugmasini bosing.
+  </Step>
+  <Step title="Oʻquvchilarni qidiring va belgilang">
+    Ism yoki kod boʻyicha qidiring, soʻng qoʻshmoqchi boʻlgan har bir oʻquvchini belgilang. Roʻyxatda faqat faol oʻquvchilar koʻrinadi, shu guruhda allaqachon bor oʻquvchilar esa koʻrinmaydi.
+  </Step>
+  <Step title="Boshlanish sanasini belgilang">
+    **Boshlanish sanasi**ni tanlang. Bu oʻquvchi haqiqatda boshlagan kun va uning billing sanasini belgilaydi — agar u allaqachon dars qatnashayotgan boʻlsa, sanani orqaga suring.
+
+    <Note>
+      Sana bir oydan koʻproqqa oldinga surilmasligi kerak va shu qadar orqaga ham surilmasligi kerakki, bu oʻquvchiga hech qachon invoys chiqarilmaydigan billing davrlarini oʻtkazib yubormasin. Bu oraliqdan tashqaridagi sanani tanlasangiz, Cohort saqlamaydi va eng erta hamda eng kech mumkin boʻlgan sanani koʻrsatadi.
+    </Note>
+  </Step>
+  <Step title="Saqlang">
+    **Qabul qilish** tugmasini bosing. Oʻquvchilar guruh roʻyxatida paydo boʻladi, va qancha oʻquvchi qabul qilinganini tasdiqlovchi xabar chiqadi.
+
+    <Note>
+      Guruhlarda oʻrinlar soni cheklangan. Agar qabul qilish guruhning **Sigʻimi**dan oshib ketsa, Cohort saqlamaydi va "Guruh toʻlgan — boshqa oʻquvchi qabul qilib boʻlmaydi." xabarini koʻrsatadi.
+    </Note>
+  </Step>
+</Steps>
+
+## Keyingi qadam
+
+- [Qabulni toʻxtatish, chiqarish yoki qayta faollashtirish](/uz/admin/groups/suspend-drop-or-reactivate-an-enrollment)
+- [Guruhni yakunlash yoki bekor qilish](/uz/admin/groups/complete-or-cancel-a-group)
