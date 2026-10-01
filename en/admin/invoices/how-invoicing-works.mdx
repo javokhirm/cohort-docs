@@ -1,0 +1,55 @@
+---
+title: "How invoicing works"
+description: "What Cohort generates automatically every day, the statuses an invoice moves through, and what happens if one goes unpaid."
+icon: "file-text"
+---
+
+Cohort creates most of a student's invoices for you, automatically, every day, following your center's billing policy. This page explains what that policy controls, what each invoice status means, and what happens if a student doesn't pay.
+
+## Automatic invoices
+
+Every day, Cohort checks each active enrollment and, when it's due, creates an invoice for it — so you don't have to bill each student by hand every month. Your center's billing policy decides:
+
+- Whether everyone is billed on the same day each month, or each student on their own enrollment anniversary.
+- The due date, and any grace period before an unpaid invoice counts as **Overdue**.
+- Whether reminders and late fees apply automatically, and whether an unpaid invoice eventually suspends or cancels the student's enrollment — see below.
+- Whether a standing discount or wallet credit is applied the moment the invoice is created.
+
+You can see your center's current policy under **Billing Policy** in the sidebar. These settings are managed at the platform level — contact Cohort support to change them.
+
+<Note>
+  Create an invoice by hand for something the automatic cycle doesn't cover, like a one-off registration fee. See [create an invoice](/en/admin/invoices/create-an-invoice).
+</Note>
+
+## Invoice statuses
+
+| Status | What it means |
+| --- | --- |
+| **Draft** | Created by a staff member, but not issued yet. It isn't visible to the student and doesn't count toward what they owe. Only an invoice you create by hand ever starts as Draft — automatic invoices skip straight to Unpaid. |
+| **Unpaid** | Issued, and nothing has been paid yet. |
+| **Partial** | Some, but not all, of the amount due has been paid. |
+| **Paid** | Paid in full. |
+| **Overdue** | Past its due date, plus any grace period, with something still owed. |
+| **Void** | Cancelled. It no longer counts toward what the student owes — but any payments already recorded on it aren't refunded automatically. |
+
+## What happens if an invoice goes unpaid
+
+| Stage | What happens |
+| --- | --- |
+| Becomes **Overdue** | Once the due date, plus any grace period, has passed. |
+| Reminder | If your billing policy has reminders turned on, Cohort sends the student an SMS reminder. |
+| Late fee | If turned on, Cohort adds a late fee to the invoice — a fixed amount or a percentage, once or repeating, and optionally capped. |
+| Enrollment suspended | If turned on, once the invoice has been overdue for a set number of days, the student's enrollment is suspended. They keep their seat in the group, but drop off the schedule and attendance. |
+| Enrollment cancelled | If turned on, once it's been overdue for longer still, the enrollment is dropped for good. The invoice itself stays open — Cohort doesn't cancel what's owed. |
+
+<Note>
+  Paying off what's owed automatically reactivates a suspended enrollment. A cancelled enrollment doesn't come back on its own — [enroll the student again](/en/admin/groups/enroll-students).
+</Note>
+
+## Related
+
+- [Create an invoice](/en/admin/invoices/create-an-invoice)
+- [Issue an invoice](/en/admin/invoices/issue-an-invoice)
+- [Record a payment](/en/admin/invoices/record-a-payment)
+- [Student wallet](/en/admin/students/student-wallet)
+- [Give a standing discount](/en/admin/students/standing-discount)

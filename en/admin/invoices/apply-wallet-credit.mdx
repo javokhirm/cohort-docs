@@ -1,0 +1,50 @@
+---
+title: "Apply wallet credit to an invoice"
+description: "Use money already sitting in a student's wallet to pay down one of their invoices."
+icon: "wallet"
+keywords:
+  - "pay from wallet"
+  - "use wallet balance"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Use a student's wallet balance to pay an invoice, instead of waiting for them to pay in cash or by card. For the wallet itself — topping it up, adjusting it, or how it's used automatically — see [student wallet](/en/admin/students/student-wallet).
+
+By default, owners and admins can apply wallet credit to an invoice.
+
+<RoleHint />
+
+## Before you start
+
+- The invoice must be **Unpaid**, **Partial** or **Overdue** — not **Draft**, **Paid** or **Void**.
+- The student needs a balance greater than zero. Check it on the student's **Wallet** tab.
+
+<Note>
+  If your center's billing policy has **Auto-apply wallet credit** turned on, Cohort already does this automatically for invoices it generates. Use this for an invoice that wasn't covered automatically — one you created by hand, or one issued before the student topped up.
+</Note>
+
+## Steps
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then select the invoice.
+  </Step>
+  <Step title="Apply the credit">
+    Select **Apply wallet credit**. Cohort shows the **Wallet balance**, the **Amount due**, how much **Will be applied**, and what's **Left in wallet** — it applies whichever is smaller, the whole balance or the amount due.
+  </Step>
+  <Step title="Confirm">
+    Select **Apply wallet credit**.
+  </Step>
+</Steps>
+
+<Warning>
+  Applying wallet credit can't be undone, and a wallet payment can't be refunded. If the student paid you in cash or by card for this invoice, select **Record payment** instead.
+</Warning>
+
+If the student has no wallet balance, Cohort tells you instead of applying anything.
+
+## What's next
+
+- [Record a payment](/en/admin/invoices/record-a-payment)
+- [Student wallet](/en/admin/students/student-wallet)

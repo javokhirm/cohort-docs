@@ -1,0 +1,50 @@
+---
+title: "Issue a credit note"
+description: "Reverse part or all of an invoice's charges, for a billing error, a goodwill reduction, or an overpayment."
+icon: "file-minus"
+keywords:
+  - "reverse a charge"
+  - "invoice correction"
+  - "overpayment"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Issue a credit note to reduce what an invoice charges — for example because of a billing error, as a goodwill reduction, or to reverse an overpayment. Unlike [voiding](/en/admin/invoices/void-an-invoice), it doesn't cancel the whole invoice — only the amount you choose.
+
+By default, owners and admins can issue a credit note.
+
+<RoleHint />
+
+## Before you start
+
+- The invoice must not be **Draft** or **Void**.
+
+## Steps
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then select the invoice.
+  </Step>
+  <Step title="Start the credit note">
+    In **Credit notes**, select **Issue credit note**.
+  </Step>
+  <Step title="Enter the amount">
+    Enter the **Amount**. Cohort won't let you credit more than the invoice's charges, minus any credit notes already issued on it.
+  </Step>
+  <Step title="Give a reason">
+    Enter the **Reason** — for example _Service not delivered_ or _invoicing error_.
+  </Step>
+  <Step title="Confirm">
+    Select **Issue credit note**.
+  </Step>
+</Steps>
+
+<Warning>
+  A credit note can't be undone. If the invoice was already paid more than its new, lower total, Cohort moves the extra amount to the student's wallet automatically.
+</Warning>
+
+## What's next
+
+- [Void an invoice](/en/admin/invoices/void-an-invoice)
+- [Student wallet](/en/admin/students/student-wallet)

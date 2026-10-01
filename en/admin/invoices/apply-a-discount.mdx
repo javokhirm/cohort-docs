@@ -1,0 +1,51 @@
+---
+title: "Apply a discount to an invoice"
+description: "Apply one of your center's discounts to a single invoice, as a one-off."
+icon: "percent"
+keywords:
+  - "one-off discount"
+  - "invoice discount"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Apply one of your active discounts to a single invoice, once. For a discount that applies automatically to every invoice from one enrollment instead, see [give a standing discount](/en/admin/students/standing-discount).
+
+By default, owners and admins can apply a discount to an invoice.
+
+<RoleHint />
+
+## Before you start
+
+- The invoice must be **Draft**, **Unpaid**, **Partial** or **Overdue** — not **Paid** or **Void**.
+- The discount must exist and be active under **Discounts** in the sidebar.
+
+## Steps
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then select the invoice.
+  </Step>
+  <Step title="Start applying the discount">
+    Select **Apply discount**.
+  </Step>
+  <Step title="Choose the discount">
+    Choose one from **Discount** — the list shows your active discounts that aren't already applied to this invoice.
+  </Step>
+  <Step title="Confirm">
+    Cohort shows the current total, the discount, and the new total. Select **Apply discount** to confirm.
+  </Step>
+</Steps>
+
+<Note>
+  A discount can only be applied once per invoice. If every active discount is already applied, or none exist, Cohort tells you instead of showing the form — create one under **Discounts** first.
+</Note>
+
+<Tip>
+  You can also pick a discount while [creating an invoice](/en/admin/invoices/create-an-invoice), instead of adding it afterwards.
+</Tip>
+
+## What's next
+
+- [Record a payment](/en/admin/invoices/record-a-payment)
+- [Give a standing discount](/en/admin/students/standing-discount)

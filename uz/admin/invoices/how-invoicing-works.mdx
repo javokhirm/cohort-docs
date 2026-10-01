@@ -1,0 +1,55 @@
+---
+title: "Invoyslar qanday ishlaydi"
+description: "Cohort har kuni avtomatik nima qilishi, invoys qaysi holatlardan oʻtishi va u toʻlanmay qolsa nima boʻlishi."
+icon: "file-text"
+---
+
+Invoyslarning koʻpini Cohort siz uchun avtomatik, har kuni, markazingizning billing siyosatiga koʻra yaratadi. Bu sahifada shu siyosat nimani belgilashi, har bir invoys holati nimani anglatishi va oʻquvchi toʻlamasa nima boʻlishi tushuntiriladi.
+
+## Avtomatik invoyslar
+
+Cohort har kuni har bir faol qabulni tekshiradi va muddati kelganda unga invoys yaratadi — shu tufayli har bir oʻquvchiga qoʻlda invoys yozishga hojat qolmaydi. Markazingizning billing siyosati quyidagilarni belgilaydi:
+
+- Barcha oʻquvchilarga oyning bir kunida invoys chiqariladimi, yoki har biriga oʻz qabul qilingan sanasining yildonligida.
+- Toʻlov muddati va invoys **Muddati oʻtgan** holatiga oʻtishidan oldingi imtiyozli muddat.
+- Eslatmalar va kechikish jarimasi avtomatik qoʻllanadimi, va toʻlanmagan invoys oqibatda oʻquvchi qabulini toʻxtatadimi yoki bekor qiladimi — quyida koʻring.
+- Invoys yaratilgan zahoti doimiy chegirma yoki hamyon mablagʻi qoʻllanadimi.
+
+Markazingizning joriy siyosatini yon menyudagi **Billing siyosati** boʻlimida koʻrishingiz mumkin. Bu sozlamalar platforma darajasida boshqariladi — oʻzgartirish uchun Cohort qoʻllab-quvvatlash xizmatiga murojaat qiling.
+
+<Note>
+  Avtomatik tsikl qamrab olmaydigan narsa uchun — masalan, bir martalik roʻyxatdan oʻtish toʻlovi uchun — invoysni qoʻlda yarating. Qarang: [invoys yaratish](/uz/admin/invoices/create-an-invoice).
+</Note>
+
+## Invoys holatlari
+
+| Holat | Nimani anglatadi |
+| --- | --- |
+| **Qoralama** | Xodim tomonidan yaratilgan, lekin hali chiqarilmagan. Oʻquvchiga koʻrinmaydi va uning qarziga hisoblanmaydi. Faqat qoʻlda yaratilgan invoys **Qoralama** holatidan boshlanadi — avtomatik invoyslar bu bosqichni oʻtkazib yuborib, toʻgʻridan-toʻgʻri **Toʻlanmagan** holatida yaratiladi. |
+| **Toʻlanmagan** | Chiqarilgan, lekin hali hech narsa toʻlanmagan. |
+| **Qisman** | Toʻlanishi kerak boʻlgan summaning bir qismi toʻlangan, hammasi emas. |
+| **Toʻlangan** | Toʻliq toʻlangan. |
+| **Muddati oʻtgan** | Toʻlov muddati va imtiyozli muddat oʻtib ketgan, lekin hali qarz bor. |
+| **Bekor qilingan** | Bekor qilingan. Endi oʻquvchining qarziga hisoblanmaydi — lekin unda qayd etilgan toʻlovlar avtomatik qaytarilmaydi. |
+
+## Invoys toʻlanmay qolsa nima boʻladi
+
+| Bosqich | Nima boʻladi |
+| --- | --- |
+| **Muddati oʻtgan** boʻladi | Toʻlov muddati va imtiyozli muddat oʻtgach. |
+| Eslatma | Billing siyosatingizda eslatmalar yoqilgan boʻlsa, Cohort oʻquvchiga SMS eslatma yuboradi. |
+| Kechikish jarimasi | Yoqilgan boʻlsa, Cohort invoysga kechikish jarimasini qoʻshadi — belgilangan summa yoki foiz, bir marta yoki takroriy, va ixtiyoriy chegara bilan. |
+| Qabul toʻxtatiladi | Yoqilgan boʻlsa, invoys belgilangan necha kun muddati oʻtgandan soʻng, oʻquvchining qabuli toʻxtatiladi. Guruhdagi oʻrni saqlanib qoladi, lekin u dars jadvali va davomatdan chiqib qoladi. |
+| Qabul bekor qilinadi | Yoqilgan boʻlsa, undan ham uzoqroq muddat oʻtgach, qabul butunlay chiqariladi. Invoysning oʻzi esa ochiq qoladi — Cohort qarzni bekor qilmaydi. |
+
+<Note>
+  Qarzni toʻlash toʻxtatilgan qabulni avtomatik qayta faollashtiradi. Bekor qilingan qabul oʻz-oʻzidan qaytmaydi — oʻquvchini yana [qabul qiling](/uz/admin/groups/enroll-students).
+</Note>
+
+## Shuningdek qarang
+
+- [Invoys yaratish](/uz/admin/invoices/create-an-invoice)
+- [Invoysni chiqarish](/uz/admin/invoices/issue-an-invoice)
+- [Toʻlovni qayd etish](/uz/admin/invoices/record-a-payment)
+- [Oʻquvchi hamyoni](/uz/admin/students/student-wallet)
+- [Doimiy chegirma berish](/uz/admin/students/standing-discount)

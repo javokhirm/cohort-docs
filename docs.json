@@ -90,6 +90,19 @@
 								]
 							},
 							{
+								"group": "Invoyslar",
+								"pages": [
+									"uz/admin/invoices/how-invoicing-works",
+									"uz/admin/invoices/create-an-invoice",
+									"uz/admin/invoices/issue-an-invoice",
+									"uz/admin/invoices/record-a-payment",
+									"uz/admin/invoices/apply-a-discount",
+									"uz/admin/invoices/apply-wallet-credit",
+									"uz/admin/invoices/issue-a-credit-note",
+									"uz/admin/invoices/void-an-invoice"
+								]
+							},
+							{
 								"group": "Toʻlov rejalari",
 								"pages": ["uz/admin/fee-plans/add-a-fee-plan"]
 							},
@@ -166,6 +179,19 @@
 								]
 							},
 							{
+								"group": "Счета",
+								"pages": [
+									"ru/admin/invoices/how-invoicing-works",
+									"ru/admin/invoices/create-an-invoice",
+									"ru/admin/invoices/issue-an-invoice",
+									"ru/admin/invoices/record-a-payment",
+									"ru/admin/invoices/apply-a-discount",
+									"ru/admin/invoices/apply-wallet-credit",
+									"ru/admin/invoices/issue-a-credit-note",
+									"ru/admin/invoices/void-an-invoice"
+								]
+							},
+							{
 								"group": "Тарифные планы",
 								"pages": ["ru/admin/fee-plans/add-a-fee-plan"]
 							},
@@ -239,6 +265,19 @@
 									"en/admin/groups/suspend-drop-or-reactivate-an-enrollment",
 									"en/admin/groups/complete-or-cancel-a-group",
 									"en/admin/groups/grading-scales"
+								]
+							},
+							{
+								"group": "Invoices",
+								"pages": [
+									"en/admin/invoices/how-invoicing-works",
+									"en/admin/invoices/create-an-invoice",
+									"en/admin/invoices/issue-an-invoice",
+									"en/admin/invoices/record-a-payment",
+									"en/admin/invoices/apply-a-discount",
+									"en/admin/invoices/apply-wallet-credit",
+									"en/admin/invoices/issue-a-credit-note",
+									"en/admin/invoices/void-an-invoice"
 								]
 							},
 							{

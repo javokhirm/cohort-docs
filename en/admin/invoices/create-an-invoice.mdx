@@ -1,0 +1,59 @@
+---
+title: "Create an invoice"
+description: "Create a one-off invoice by hand, for something your center's automatic billing doesn't cover."
+icon: "file-plus"
+keywords:
+  - "one-off invoice"
+  - "manual invoice"
+  - "registration fee"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Most invoices are created for you automatically, following your center's billing policy — see [how invoicing works](/en/admin/invoices/how-invoicing-works). Create one by hand for something that cycle doesn't cover, like a registration fee or a one-off item.
+
+By default, owners, admins and managers can create invoices.
+
+<RoleHint />
+
+## Before you start
+
+- The student must already exist. See [add a student](/en/admin/students/add-a-student).
+
+## Steps
+
+<Steps>
+  <Step title="Open the Invoices page">
+    In the sidebar, select **Invoices**.
+  </Step>
+  <Step title="Start the invoice">
+    Select **Create invoice**.
+
+    <Tip>
+      The dashboard also has a **Create invoice** button — it brings you to this same page, so select **Create invoice** here to open the form.
+    </Tip>
+  </Step>
+  <Step title="Choose the student and branch">
+    Choose the **Student**. If your center has more than one branch, choose the **Branch** too — otherwise it's already filled in.
+  </Step>
+  <Step title="Set the due date">
+    Choose the **Due date**. It can't be in the past.
+  </Step>
+  <Step title="Add what's being charged">
+    For each charge, enter a **Description**, choose a **Type** — **Tuition** or **Other** — and enter **Qty** and **Unit price**. Select **Add line** for more than one charge.
+  </Step>
+  <Step title="Apply a discount (optional)">
+    Choose one of your active discounts under **Discount**, or leave **No discount** selected. You can also apply one later, after the invoice is saved — see [apply a discount](/en/admin/invoices/apply-a-discount).
+  </Step>
+  <Step title="Save">
+    Select **Create invoice**.
+  </Step>
+</Steps>
+
+<Tip>
+  Cohort doesn't check whether the student already has an invoice for the same charge. If you're not sure, check their existing invoices first.
+</Tip>
+
+## What's next
+
+A new invoice is saved as **Draft** — it isn't visible to the student yet and doesn't count toward what they owe. [Issue it](/en/admin/invoices/issue-an-invoice) when you're ready to send it.

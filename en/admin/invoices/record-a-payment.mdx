@@ -1,0 +1,58 @@
+---
+title: "Record a payment"
+description: "Record a cash, card or bank transfer payment against an invoice."
+icon: "banknote"
+keywords:
+  - "cash payment"
+  - "partial payment"
+  - "card payment"
+  - "bank transfer"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Record a payment when a student pays you in cash, by card, or by bank transfer, against one of their invoices. For money already sitting in the student's wallet, use [apply wallet credit](/en/admin/invoices/apply-wallet-credit) instead.
+
+By default, owners and admins can record payments.
+
+<RoleHint />
+
+<Note>
+  Click, Payme and Uzum aren't available for students to pay their invoices online yet. Until then, record every payment yourself, whichever way the student actually paid you.
+</Note>
+
+## Before you start
+
+- The invoice must be **Unpaid**, **Partial** or **Overdue**. A **Draft** invoice has to be [issued](/en/admin/invoices/issue-an-invoice) first.
+
+## Steps
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then select the invoice.
+  </Step>
+  <Step title="Start recording the payment">
+    Select **Record payment**.
+  </Step>
+  <Step title="Enter the amount">
+    Enter the **Amount** — it defaults to the full amount due. Change it to record a partial payment.
+  </Step>
+  <Step title="Choose the method">
+    Choose the **Method**: **Cash**, **Card** or **Bank transfer**.
+  </Step>
+  <Step title="Confirm the date and notes">
+    Confirm or change the **Date** — it defaults to today. Add **Optional notes** if you'd like.
+  </Step>
+  <Step title="Save">
+    Select **Record payment**.
+  </Step>
+</Steps>
+
+<Note>
+  If the amount is less than what's owed, the invoice's status becomes **Partial**. If it covers the full balance, the invoice becomes **Paid**. Paying more than what's owed adds the difference to the student's wallet as credit — see [student wallet](/en/admin/students/student-wallet).
+</Note>
+
+## What's next
+
+- [Apply wallet credit](/en/admin/invoices/apply-wallet-credit)
+- [Void an invoice](/en/admin/invoices/void-an-invoice)

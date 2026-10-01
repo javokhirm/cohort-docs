@@ -2,7 +2,12 @@
 title: "Student wallet"
 description: "Top up a student's wallet, correct its balance, and use the money in it to pay invoices."
 icon: "wallet"
-keywords: ["balance", "credit", "prepayment", "top up", "overpayment"]
+keywords:
+  - "balance"
+  - "credit"
+  - "prepayment"
+  - "top up"
+  - "overpayment"
 ---
 
 import RoleHint from "/snippets/en/role-hint.mdx";
@@ -59,23 +64,7 @@ When your center's billing policy has **Auto-apply wallet credit** turned on, Co
 
 ### By hand
 
-For any other invoice, for example one you created yourself or one issued before the student topped up:
-
-<Steps>
-  <Step title="Open the invoice">
-    In the sidebar, select **Invoices**, then open the student's invoice. It must be **Unpaid**, **Partial** or **Overdue**.
-  </Step>
-  <Step title="Apply the credit">
-    Select **Apply wallet credit**. Cohort shows the **Wallet balance**, the **Amount due**, how much **Will be applied** and what's **Left in wallet**. It applies whichever is smaller: the whole balance, or the amount due.
-  </Step>
-  <Step title="Confirm">
-    Select **Apply wallet credit**.
-  </Step>
-</Steps>
-
-<Warning>
-  Paying from the wallet can't be undone, and a wallet payment can't be refunded. If the student paid in cash or by card for this invoice, select **Record payment** on the invoice instead.
-</Warning>
+For any other invoice, for example one you created yourself or one issued before the student topped up, open the invoice and select **Apply wallet credit** there. See [apply wallet credit to an invoice](/en/admin/invoices/apply-wallet-credit).
 
 ## Wallet transactions
 

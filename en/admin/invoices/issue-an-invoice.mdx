@@ -1,0 +1,37 @@
+---
+title: "Issue an invoice"
+description: "Turn a draft invoice into one the student can see and owes, so it counts toward their balance."
+icon: "send"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+An invoice you [create by hand](/en/admin/invoices/create-an-invoice) is saved as **Draft** — it isn't visible to the student and doesn't count toward what they owe. Issuing it makes it **Unpaid**: visible to the student, and due by the date you set.
+
+By default, owners and admins can issue invoices.
+
+<RoleHint />
+
+## Before you start
+
+- The invoice must be **Draft**. Invoices Cohort creates automatically skip this step and start as **Unpaid** already.
+
+## Steps
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then select the draft invoice.
+  </Step>
+  <Step title="Issue it">
+    Select **Issue invoice**.
+  </Step>
+</Steps>
+
+<Note>
+  Once issued, you can no longer change the due date or add line items. To add a discount or record a payment, use the actions on the invoice itself.
+</Note>
+
+## What's next
+
+- [Record a payment](/en/admin/invoices/record-a-payment)
+- [Apply a discount](/en/admin/invoices/apply-a-discount)
