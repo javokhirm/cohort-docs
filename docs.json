@@ -103,6 +103,10 @@
 								]
 							},
 							{
+								"group": "Toʻlovlar",
+								"pages": ["uz/admin/payments/view-payments", "uz/admin/payments/refund-a-payment"]
+							},
+							{
 								"group": "Toʻlov rejalari",
 								"pages": ["uz/admin/fee-plans/add-a-fee-plan"]
 							},
@@ -206,6 +210,10 @@
 								]
 							},
 							{
+								"group": "Платежи",
+								"pages": ["ru/admin/payments/view-payments", "ru/admin/payments/refund-a-payment"]
+							},
+							{
 								"group": "Тарифные планы",
 								"pages": ["ru/admin/fee-plans/add-a-fee-plan"]
 							},
@@ -307,6 +315,10 @@
 									"en/admin/invoices/issue-a-credit-note",
 									"en/admin/invoices/void-an-invoice"
 								]
+							},
+							{
+								"group": "Payments",
+								"pages": ["en/admin/payments/view-payments", "en/admin/payments/refund-a-payment"]
 							},
 							{
 								"group": "Fee Plans",

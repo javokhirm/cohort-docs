@@ -1,0 +1,56 @@
+---
+title: "Refund a payment"
+description: "Return money from a successful payment to the student's wallet, or hand it back as cash."
+icon: "rotate-ccw"
+keywords:
+  - "cash refund"
+  - "wallet refund"
+  - "reverse a payment"
+  - "partial refund"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Refund a payment that's gone through, in full or in part — back to the student's **Wallet**, or as **Cash out** if you're handing the money back yourself. This can't be undone.
+
+By default, owners and admins can refund a payment.
+
+<RoleHint />
+
+## Before you start
+
+- The payment must be **Succeeded**. A payment made with **Wallet credit** can't be refunded this way — that's wallet money being spent, not received. To fix a wallet balance instead, see [student wallet](/en/admin/students/student-wallet).
+- **Wallet** is only offered as a destination when the payment was recorded against an invoice. A payment that was simply a deposit into the wallet can only be refunded as **Cash out**.
+
+## Steps
+
+<Steps>
+  <Step title="Open the payment">
+    Either open **Payments** in the sidebar and select the payment, or open the invoice it's on and find it under **Payment history**.
+  </Step>
+  <Step title="Start the refund">
+    Select **Refund** — on the invoice's payment history, it's the icon next to the payment.
+  </Step>
+  <Step title="Enter the amount">
+    Enter the **Amount** — it defaults to the full amount paid. Lower it to refund only part of it.
+  </Step>
+  <Step title="Choose where the money goes">
+    Choose the **Destination**: **Wallet** to credit the student, or **Cash out** to hand the money back as cash.
+  </Step>
+  <Step title="Confirm">
+    Add **Optional notes** if you'd like, then select **Confirm refund**.
+  </Step>
+</Steps>
+
+<Warning>
+  A refund can't be undone. If the payment was recorded against an invoice, refunding it lowers what the invoice shows as paid — which can reopen a **Paid** invoice as **Partial**, **Unpaid**, or even **Overdue**.
+</Warning>
+
+<Note>
+  You can refund the same payment more than once, as long as the total refunded doesn't exceed what's left of it — and, for an invoice payment, what the invoice still shows as paid. Once the refunds add up to the full amount, the payment's status becomes **Refunded**. Choosing **Wallet** shows the credit in the student's wallet as **Refund credit** — see [student wallet](/en/admin/students/student-wallet).
+</Note>
+
+## What's next
+
+- [View payments](/en/admin/payments/view-payments)
+- [Student wallet](/en/admin/students/student-wallet)
