@@ -1,0 +1,91 @@
+---
+title: "Oʻquvchi hamyoni"
+description: "Oʻquvchi hamyonini toʻldiring, balansini tuzating va undagi pul bilan invoyslarni toʻlang."
+icon: "wallet"
+keywords: ["balans", "oldindan toʻlov", "toʻldirish", "ortiqcha toʻlov", "avans"]
+---
+
+import RoleHint from "/snippets/uz/role-hint.mdx";
+
+Oʻquvchi hamyonida u oldindan toʻlagan yoki ortiqcha toʻlagan pul saqlanadi va uni oʻquvchining invoyslariga ishlatish mumkin. Balans UZS da yuritiladi va hech qachon manfiy boʻlmaydi. Hamyon oʻquvchi sahifasining **Hamyon** varagʻida joylashgan.
+
+Standart holatda hamyonni koʻrish va toʻldirishni egasi, administrator va menejer bajara oladi. Balansni tuzatish va undan invoys toʻlashni faqat egasi va administrator bajara oladi.
+
+<RoleHint />
+
+## Hamyonni toʻldiring
+
+Oʻquvchi hali biror invoysga tegishli boʻlmagan pul toʻlaganda shundan foydalaning.
+
+<Steps>
+  <Step title="Hamyonni oching">
+    Yon menyuda **Oʻquvchilar** boʻlimini oching, oʻquvchini tanlang va **Hamyon** varagʻini oching.
+  </Step>
+  <Step title="Toʻldirishni boshlang">
+    **Hisobni toʻldirish** tugmasini bosing.
+  </Step>
+  <Step title="Toʻlovni kiriting">
+    **Summa**ni kiriting va **Toʻlov usuli**ni tanlang: **Naqd**, **Karta** yoki **Bank oʻtkazmasi**. **Izohlar** ixtiyoriy.
+  </Step>
+  <Step title="Tasdiqlang">
+    **Toʻldirishni tasdiqlash** tugmasini bosing. Toʻldirish **Soʻngi tranzaksiyalar** roʻyxatida paydo boʻladi va qabul qilingan toʻlov sifatida ham qayd etiladi.
+  </Step>
+</Steps>
+
+## Balansni tuzating
+
+Tuzatish xatoni toʻgʻrilash uchun kerak — masalan, toʻldirish ikki marta kiritilgan boʻlsa. U faqat hamyonni oʻzgartiradi va toʻlov sifatida qayd etilmaydi.
+
+<Steps>
+  <Step title="Tuzatishni oching">
+    Oʻquvchining **Hamyon** varagʻida **Balansni tuzatish** tugmasini bosing. Yuqorida **Joriy balans** koʻrsatiladi.
+  </Step>
+  <Step title="Summani kiriting">
+    **Summa**ni kiriting: musbat son balansga qoʻshadi, manfiy son esa yechadi. Masalan, 200 000 UZS yechish uchun `-200000` kiriting. Balans manfiy boʻla olmaydi.
+  </Step>
+  <Step title="Sababni yozing">
+    **Sabab** maydonini toʻldiring. U hamyon tarixida tuzatish yonida koʻrinadi.
+  </Step>
+  <Step title="Tasdiqlang">
+    **Tuzatishni tasdiqlash** tugmasini bosing.
+  </Step>
+</Steps>
+
+## Hamyon balansi bilan invoysni toʻlang
+
+### Avtomatik
+
+Markazingizning billing siyosatida **Hamyon mablagʻini avtomatik qoʻllash** yoqilgan boʻlsa, Cohort har bir hisob-kitob davri uchun oʻzi yaratadigan invoyslarni doimiy chegirmalardan keyin hamyondan toʻlaydi. Sozlamani tekshirish uchun yon menyuda **Billing siyosati**ni tanlang.
+
+### Qoʻlda
+
+Boshqa har qanday invoys uchun — masalan, siz qoʻlda yaratgan yoki oʻquvchi hamyonni toʻldirishidan oldin yuborilgan invoys:
+
+<Steps>
+  <Step title="Invoysni oching">
+    Yon menyuda **Invoyslar** boʻlimini oching va oʻquvchining invoysini oching. Uning holati **Toʻlanmagan**, **Qisman** yoki **Muddati oʻtgan** boʻlishi kerak.
+  </Step>
+  <Step title="Mablagʻni qoʻllang">
+    **Hamyon mablagʻini qoʻllash** tugmasini bosing. Cohort **Hamyon balansi**, **Toʻlanishi kerak** summasi, qancha **Qoʻllanadi** va qancha **Hamyonda qoladi**ni koʻrsatadi. Ikkisidan kichigi qoʻllanadi: butun balans yoki toʻlanishi kerak boʻlgan summa.
+  </Step>
+  <Step title="Tasdiqlang">
+    **Hamyon mablagʻini qoʻllash** tugmasini bosing.
+  </Step>
+</Steps>
+
+<Warning>
+  Hamyondan toʻlovni bekor qilib boʻlmaydi va hamyon toʻlovini qaytarib boʻlmaydi. Agar oʻquvchi bu invoysni naqd yoki karta orqali toʻlagan boʻlsa, buning oʻrniga invoysda **Toʻlovni qayd etish** tugmasini bosing.
+</Warning>
+
+## Hamyon tranzaksiyalari
+
+**Soʻngi tranzaksiyalar** roʻyxatida balansdagi oxirgi oʻzgarishlar sanasi va izohi bilan koʻrsatiladi, avval yangilari.
+
+| Turi | Bu nima |
+| --- | --- |
+| **Toʻldirish** | **Hisobni toʻldirish** orqali qoʻshilgan pul. |
+| **Ortiqcha toʻlov** | Toʻlovning invoys summasidan oshgan qismi. |
+| **Qaytarilgan mablagʻ** | Hamyonga qaytarilgan toʻlov. |
+| **Invoys toʻlovi** | Invoysni toʻlashga ishlatilgan hamyon puli. |
+| **Tuzatish** | **Balansni tuzatish** orqali kiritilgan oʻzgartirish. |
+| **Naqd yechish** | Oʻquvchiga naqd qilib qaytarilgan hamyon puli. |

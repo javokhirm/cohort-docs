@@ -1,0 +1,58 @@
+---
+title: "Edit a student"
+description: "Change a student's details or branch, or set their status, for example to mark them as graduated."
+icon: "user-pen"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+By default, owners and admins can edit students. Managers can open a student's page but can't change it.
+
+<RoleHint />
+
+## Edit the student's details
+
+<Steps>
+  <Step title="Open the student">
+    In the sidebar, select **Students**, then select the student in the list.
+  </Step>
+  <Step title="Open the edit form">
+    At the top of the student's page, select the ⋯ button, then select **Edit**.
+  </Step>
+  <Step title="Change what you need">
+    Under **Personal**, you can change **First name**, **Last name**, **Date of birth** and **Gender**. Under **Contact**, you can change **Phone**, **Email**, **Branch** and **Address**.
+
+    Changing the **Branch** doesn't take the student out of the groups they're already in.
+  </Step>
+  <Step title="Save">
+    Select **Save student**.
+  </Step>
+</Steps>
+
+If the email you entered already belongs to someone else, Cohort shows "This email is already used by another user." Each person needs their own email address, or none.
+
+The same form is also where you connect another guardian and set a new password. See [Manage guardians](/en/admin/students/guardians) and [Reset a student's password](/en/admin/students/reset-a-student-password).
+
+## Change the student's status
+
+Every student has a status: **Active**, **Inactive**, **Graduated** or **Suspended**. It appears next to the student's name and in the **Students** list, so your team can see at a glance who is still studying with you.
+
+To change it, open the edit form as above. Under **Status**, choose the **Student status**, then select **Save student**.
+
+The status is a label for your team. Here's what it changes, and what it doesn't:
+
+| | What happens |
+| --- | --- |
+| The **Students** list | Shows only **Active** students at first. To find students with another status, choose **All**, **Inactive**, **Graduated** or **Suspended** above the list. |
+| Enrolling in a group | Only active students come up when you enroll students in a group. |
+| Groups and invoices | Nothing changes. The student stays enrolled in their groups, and invoices for those groups keep being generated. |
+| Signing in | Nothing changes. The student can still sign in to the Student console and see their invoices and history. |
+
+<Warning>
+  Marking a student **Inactive**, **Graduated** or **Suspended** doesn't remove them from their groups. To take a student out of a group, open the group and drop or suspend their enrollment on its **Students** tab.
+</Warning>
+
+## Related
+
+- [Student profile](/en/admin/students/student-profile): what each tab on the student's page shows
+- [Add a student](/en/admin/students/add-a-student)

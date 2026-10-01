@@ -1,0 +1,80 @@
+---
+title: "Student profile"
+description: "Find a student, and what each tab on their page shows: overview, guardians, enrollments, performance, grades, billing and wallet."
+icon: "id-card"
+---
+
+Every student has their own page in the Staff console, with their details, groups, attendance, marks and money in one place. By default, owners, admins and managers can open it.
+
+## Find a student
+
+In the sidebar, select **Students**. Search by name or student code, then select the student to open their page.
+
+The list shows **Active** students at first. To see students with another status, choose **All**, **Inactive**, **Graduated** or **Suspended** above the list.
+
+## The top of the page
+
+The top of the page shows the student's name and status, their student code, branch and phone number.
+
+The ⋯ button holds the actions for this student:
+
+- **Edit**: change the student's details, status or password. See [Edit a student](/en/admin/students/edit-a-student).
+- **Sign in as student**: open the Student console as this student. See [Sign in as a student](/en/admin/students/view-as-student).
+
+Both are available to owners and admins by default.
+
+## Tabs
+
+| Tab | What it shows |
+| --- | --- |
+| **Overview** | Personal details |
+| **Guardians** | Parents and guardians connected to the student |
+| **Enrollments** | Every group the student has been in, and any standing discounts |
+| **Performance** | Attendance and per-lesson marks |
+| **Grades** | Assessment results |
+| **Billing** | The student's invoices |
+| **Wallet** | The wallet balance and its transactions |
+
+### Overview
+
+**Personal details** shows the student's **Date of birth**, **Address**, **Gender** and **Enrollment date**: the day the student was added to Cohort.
+
+### Guardians
+
+Each guardian with their relation to the student, name and phone number. The **Primary** and **Pickup OK** badges mark the primary guardian and who may collect the student. Select a guardian to open their details. See [Manage guardians](/en/admin/students/guardians).
+
+### Enrollments
+
+One row per group the student has been enrolled in:
+
+- **Group** and **Course**
+- **From**: the date the student was enrolled
+- **Status**: **Active**, **Suspended**, **Dropped**, **Completed** or **Transferred**
+
+Use the filter above the table to show only one status. Owners and admins also see a **Standing discount** column: see [Give a standing discount](/en/admin/students/standing-discount).
+
+To enroll the student in another group, open that group and select **Enroll students**.
+
+### Performance
+
+Attendance and the marks teachers give for each lesson. Narrow it down with the filters at the top: a period (**All time**, **This month**, **Last 30 days**, **Last 90 days**), a group (**All groups** or one of the student's groups) and an attendance status. **Clear filters** resets them.
+
+- **Attendance rate**: the share of the student's classes they attended, out of the classes where attendance was taken. **Late** counts as attended. A red badge appears when the rate is below your center's attendance threshold.
+- **Average session mark**: the average of the student's lesson marks for the period.
+- **Session history**: one row per lesson, with the **Date**, the **Session** topic and group, the **Attendance** (**Present**, **Absent**, **Late** or **Excused**) and the **Mark**. **Not marked** means the student attended but the teacher hasn't given a mark.
+
+The attendance status filter only narrows **Session history**. The two figures at the top always count every lesson in the chosen period and group.
+
+### Grades
+
+Results of assessments the teacher has published, newest first. Per-lesson marks aren't listed here: you'll find them on **Performance**.
+
+### Billing
+
+Every invoice issued to the student, newest first, with the **Invoice** number, **Date**, **Total** and **Status** (**Draft**, **Unpaid**, **Partial**, **Paid**, **Overdue** or **Void**).
+
+This tab is for viewing only. To record a payment or change an invoice, open it from **Invoices** in the sidebar.
+
+### Wallet
+
+The student's **Wallet balance** and **Recent transactions**, with buttons to top up or correct the balance. Owners, admins and managers see this tab by default. See [Student wallet](/en/admin/students/student-wallet).

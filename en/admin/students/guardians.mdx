@@ -1,0 +1,101 @@
+---
+title: "Manage guardians"
+description: "Add a student's parents or guardians, connect one guardian to several children, choose the primary guardian, and remove a guardian."
+icon: "users-round"
+keywords: ["parent", "mother", "father", "siblings"]
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+A guardian is a parent or another adult responsible for a student. Guardians don't sign in to Cohort. Their record holds a name, a phone number and how they're related to each student.
+
+By default, owners and admins can add, edit and remove guardians. Managers can see a student's guardians.
+
+<RoleHint />
+
+## Add a guardian
+
+<Steps>
+  <Step title="Open the student's guardians">
+    In the sidebar, select **Students**, select the student, then open the **Guardians** tab.
+  </Step>
+  <Step title="Start adding">
+    Select **Add guardian**.
+  </Step>
+  <Step title="Enter the phone number">
+    Enter the **Parent / Guardian phone**. Cohort checks the number as soon as it's complete:
+
+    - **New guardian**: nobody at your center has this number yet. Enter the guardian's first and last name in **Guardian name**, and choose the **Relation**: **Father**, **Mother** or **Guardian**.
+    - **Existing guardian found**: this person is already a guardian of another student, listed under **Connected students**. Check that it's the right person, choose the **Relation**, then select **Connect guardian**.
+
+    If the guardian has no phone, leave the number blank and enter their name and relation.
+  </Step>
+  <Step title="Choose whether they're the primary guardian">
+    Turn **Primary guardian** on or off. It's on by default for a student's first guardian. What it means is explained below.
+  </Step>
+  <Step title="Save">
+    Select **Add guardian**.
+  </Step>
+</Steps>
+
+You can also add a guardian while [adding a student](/en/admin/students/add-a-student) or [editing one](/en/admin/students/edit-a-student): the form's **Guardian** section works the same way. A guardian added with a new student is always the primary guardian.
+
+## How phone matching works
+
+Brothers and sisters at the same center usually share a parent. So that each parent has one record instead of one per child, Cohort looks the phone number up among your center's guardians before it asks for a name.
+
+| What you see | What it means |
+| --- | --- |
+| **New guardian** | No guardian at your center has this number. Enter the name and relation, and Cohort creates a new guardian. |
+| **Existing guardian found** | The number belongs to a guardian of another student at your center. Connecting them adds this student to the same guardian, so their details stay in one place. |
+| **Existing record found** | The number belongs to someone who used to be a guardian at your center but isn't connected to any student now. Connect them the same way. |
+| **Already connected** | This person is already a guardian of this student. There's nothing to add. |
+
+Only guardians count as a match. If a staff member or a student has the same number, Cohort doesn't connect them, and the guardian is added as a new person.
+
+If Cohort finds a match and you try to save without connecting, it shows "This number is already registered. Connect the guardian or clear the number."
+
+## Primary guardian and pickup
+
+On the **Guardians** tab, a guardian can carry two badges:
+
+- **Primary**: the guardian who receives the messages your center sends to a student's guardian. A student has at most one primary guardian, so making someone primary takes the badge away from the previous one.
+- **Pickup OK**: the guardian may collect the student. It's for your team's reference only. Guardians added from the student's page always get this badge. To connect a guardian without it, use **Link a student** from the guardian's details and turn off **Can pick up**.
+
+You can't change either setting for a guardian who is already connected. To change it, remove the guardian from the student, then add them again with the setting you want.
+
+## Edit a guardian's details
+
+<Steps>
+  <Step title="Open the guardian">
+    On the student's **Guardians** tab, select the guardian. The **Guardian details** panel opens.
+  </Step>
+  <Step title="Edit">
+    Select the pencil button, then change **First name**, **Last name** or **Phone**.
+  </Step>
+  <Step title="Save">
+    Select **Save**. The change applies to every student this guardian is connected to.
+  </Step>
+</Steps>
+
+## Connect a guardian to another student
+
+Use this when a guardian's other child is already in Cohort.
+
+<Steps>
+  <Step title="Open the guardian">
+    On the **Guardians** tab of a student they're already connected to, select the guardian.
+  </Step>
+  <Step title="Link the student">
+    Under **Linked students**, select **Link a student**. Choose the **Student** and the **Relation**, and turn **Primary guardian** and **Can pick up** on or off.
+  </Step>
+  <Step title="Save">
+    Select **Link**.
+  </Step>
+</Steps>
+
+## Remove a guardian
+
+On the student's **Guardians** tab, select the trash button next to the guardian, then select **Remove**.
+
+Removing only disconnects the guardian from this student. Their record stays, along with any other children they're connected to, so you can connect them again later. You can also disconnect a student from the **Guardian details** panel: select the trash button next to the student under **Linked students**, then select **Unlink**.

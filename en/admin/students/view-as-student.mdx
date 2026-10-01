@@ -1,0 +1,54 @@
+---
+title: "Sign in as a student"
+description: "Open the Student console as one of your students to see exactly what they see, without their password."
+icon: "eye"
+keywords: ["impersonate", "view as student", "student view"]
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Signing in as a student opens the Student console as that student, so you can see exactly what they see: for example, when a student says their schedule or an invoice looks wrong. You don't need their password.
+
+By default, owners and admins can sign in as a student.
+
+<RoleHint />
+
+## Open the Student console as the student
+
+<Steps>
+  <Step title="Open the student">
+    In the sidebar, select **Students**, then select the student.
+  </Step>
+  <Step title="Sign in as the student">
+    At the top of the student's page, select the ⋯ button, then select **Sign in as student**. The Student console opens in a panel on the right, laid out as students see it on their phone.
+
+    To use the whole screen instead, select **Open in new tab** at the top of the panel.
+  </Step>
+  <Step title="Finish">
+    When you're done, select **Exit** in the red bar at the top of the Student console.
+  </Step>
+</Steps>
+
+## What to know
+
+- A red bar across the top of the Student console reminds you whose account you're in, and that every change is recorded.
+- You're working in the student's real account. If you change something, for example their phone number or language, it changes for the student too.
+- Cohort records when you started and every change you make, with your name.
+- The session ends on its own after 2 hours at most. To keep going, start again from the student's page.
+- A student's status doesn't matter: you can also sign in as a graduated or suspended student.
+
+## If it doesn't work
+
+<AccordionGroup>
+  <Accordion title="“This person can't be impersonated: their account is inactive, or they also hold a staff role.”">
+    Cohort only lets you sign in as someone who is just a student at your center. If this person also has another role, for example they also work at your center, or their account has been turned off, you can't sign in as them.
+  </Accordion>
+
+  <Accordion title="“This impersonation link expired or was already used. Start again from the admin console.”">
+    The link that opens the Student console works once, for a short time. Close the tab, go back to the student's page and select **Sign in as student** again.
+  </Accordion>
+
+  <Accordion title="“Could not start impersonation. Please try again.”">
+    Something went wrong while starting. Try again in a moment.
+  </Accordion>
+</AccordionGroup>

@@ -56,7 +56,16 @@
 							},
 							{
 								"group": "Oʻquvchilar",
-								"pages": ["uz/admin/students/add-a-student"]
+								"pages": [
+									"uz/admin/students/add-a-student",
+									"uz/admin/students/edit-a-student",
+									"uz/admin/students/reset-a-student-password",
+									"uz/admin/students/guardians",
+									"uz/admin/students/student-profile",
+									"uz/admin/students/student-wallet",
+									"uz/admin/students/standing-discount",
+									"uz/admin/students/view-as-student"
+								]
 							},
 							{
 								"group": "Xodimlar va HR",
@@ -117,7 +126,16 @@
 							},
 							{
 								"group": "Ученики",
-								"pages": ["ru/admin/students/add-a-student"]
+								"pages": [
+									"ru/admin/students/add-a-student",
+									"ru/admin/students/edit-a-student",
+									"ru/admin/students/reset-a-student-password",
+									"ru/admin/students/guardians",
+									"ru/admin/students/student-profile",
+									"ru/admin/students/student-wallet",
+									"ru/admin/students/standing-discount",
+									"ru/admin/students/view-as-student"
+								]
 							},
 							{
 								"group": "Сотрудники и HR",
@@ -178,7 +196,16 @@
 							},
 							{
 								"group": "Students",
-								"pages": ["en/admin/students/add-a-student"]
+								"pages": [
+									"en/admin/students/add-a-student",
+									"en/admin/students/edit-a-student",
+									"en/admin/students/reset-a-student-password",
+									"en/admin/students/guardians",
+									"en/admin/students/student-profile",
+									"en/admin/students/student-wallet",
+									"en/admin/students/standing-discount",
+									"en/admin/students/view-as-student"
+								]
 							},
 							{
 								"group": "Staff & HR",

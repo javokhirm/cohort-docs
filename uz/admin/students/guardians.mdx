@@ -1,0 +1,101 @@
+---
+title: "Vasiylarni boshqarish"
+description: "Oʻquvchining ota-onasi yoki vasiylarini qoʻshing, bitta vasiyni bir nechta farzandga ulang, asosiy vasiyni tanlang va vasiyni olib tashlang."
+icon: "users-round"
+keywords: ["ota-ona", "ona", "ota", "aka-uka", "opa-singil"]
+---
+
+import RoleHint from "/snippets/uz/role-hint.mdx";
+
+Vasiy — oʻquvchi uchun javobgar boʻlgan ota-ona yoki boshqa katta yoshli odam. Vasiylar Cohortga kirmaydi. Ularning yozuvida ismi, telefon raqami va har bir oʻquvchiga kim boʻlishi saqlanadi.
+
+Standart holatda vasiylarni egasi va administrator qoʻsha, tahrirlay va olib tashlay oladi. Menejer oʻquvchining vasiylarini faqat koʻra oladi.
+
+<RoleHint />
+
+## Vasiy qoʻshing
+
+<Steps>
+  <Step title="Oʻquvchi vasiylarini oching">
+    Yon menyuda **Oʻquvchilar** boʻlimini oching, oʻquvchini tanlang va **Vasiylar** varagʻini oching.
+  </Step>
+  <Step title="Qoʻshishni boshlang">
+    **Vasiy qoʻshish** tugmasini bosing.
+  </Step>
+  <Step title="Telefon raqamini kiriting">
+    **Ota-ona / vasiy telefoni**ni kiriting. Raqam toʻliq kiritilishi bilan Cohort uni tekshiradi:
+
+    - **Yangi vasiy**: markazingizda hali hech kimda bu raqam yoʻq. **Vasiy F.I.Sh.** maydoniga vasiyning ism-familiyasini kiriting va **Qarindoshligi**ni tanlang: **Otasi**, **Onasi** yoki **Vasiy**.
+    - **Mavjud vasiy topildi**: bu odam allaqachon boshqa oʻquvchining vasiysi — ular **Ulangan oʻquvchilar** qatorida koʻrsatiladi. Aynan shu odam ekanini tekshiring, **Qarindoshligi**ni tanlang va **Vasiyni ulash** tugmasini bosing.
+
+    Vasiyning telefoni boʻlmasa, raqam maydonini boʻsh qoldiring va ism-familiyasi hamda qarindoshligini kiriting.
+  </Step>
+  <Step title="Asosiy vasiy boʻladimi, tanlang">
+    **Asosiy vasiy**ni yoqing yoki oʻchiring. Oʻquvchining birinchi vasiysi uchun u standart holatda yoqilgan. Bu nimani anglatishi quyida tushuntirilgan.
+  </Step>
+  <Step title="Saqlang">
+    **Vasiy qoʻshish** tugmasini bosing.
+  </Step>
+</Steps>
+
+Vasiyni [oʻquvchi qoʻshish](/uz/admin/students/add-a-student) yoki [uni tahrirlash](/uz/admin/students/edit-a-student) paytida ham qoʻshish mumkin: formadagi **Vasiy** boʻlimi xuddi shunday ishlaydi. Yangi oʻquvchi bilan birga qoʻshilgan vasiy har doim asosiy vasiy boʻladi.
+
+## Telefon raqami boʻyicha qidiruv qanday ishlaydi
+
+Bir markazda oʻqiydigan aka-uka va opa-singillarning ota-onasi odatda bitta. Har bir ota-ona uchun har bir farzandga alohida emas, bitta yozuv boʻlishi uchun Cohort ism soʻrashdan oldin telefon raqamini markazingiz vasiylari orasidan qidiradi.
+
+| Nimani koʻrasiz | Bu nimani anglatadi |
+| --- | --- |
+| **Yangi vasiy** | Markazingizdagi birorta vasiyda bu raqam yoʻq. Ism-familiya va qarindoshlikni kiriting — Cohort yangi vasiy yaratadi. |
+| **Mavjud vasiy topildi** | Raqam markazingizdagi boshqa oʻquvchining vasiysiga tegishli. Ulaganingizda bu vasiyga yana bir oʻquvchi qoʻshiladi va uning barcha maʼlumotlari bitta yozuvda qoladi. |
+| **Mavjud yozuv topildi** | Raqam ilgari markazingizda vasiy boʻlgan, lekin hozir hech bir oʻquvchiga ulanmagan odamga tegishli. Uni ham xuddi shunday ulang. |
+| **Allaqachon ulangan** | Bu odam allaqachon shu oʻquvchining vasiysi. Hech narsa qoʻshish shart emas. |
+
+Faqat vasiylar mos keladi. Agar xodim yoki oʻquvchida ham xuddi shu raqam boʻlsa, Cohort ularni ulamaydi va vasiy yangi odam sifatida qoʻshiladi.
+
+Agar Cohort mos odamni topsa-yu, siz ulamasdan saqlamoqchi boʻlsangiz, “Bu raqam allaqachon roʻyxatda. Vasiyni ulang yoki raqamni oʻchiring.” xabari chiqadi.
+
+## Asosiy vasiy va olib ketish
+
+**Vasiylar** varagʻida vasiy yonida ikkita belgi boʻlishi mumkin:
+
+- **Asosiy**: markazingiz oʻquvchining vasiysiga yuboradigan xabarlarni oladigan vasiy. Oʻquvchining faqat bitta asosiy vasiysi boʻladi, shuning uchun boshqasini asosiy qilsangiz, avvalgisidan bu belgi olib tashlanadi.
+- **Olib ketishi mumkin**: vasiy oʻquvchini olib keta oladi. Bu faqat jamoangiz uchun belgi. Oʻquvchi sahifasidan qoʻshilgan vasiylarga bu belgi har doim qoʻyiladi. Vasiyni bu belgisiz ulash uchun vasiy maʼlumotlaridagi **Oʻquvchi bogʻlash** tugmasidan foydalaning va **Olib ketishi mumkin**ni oʻchiring.
+
+Allaqachon ulangan vasiyning bu sozlamalarini oʻzgartirib boʻlmaydi. Ularni oʻzgartirish uchun vasiyni oʻquvchidan olib tashlang va kerakli sozlamalar bilan qaytadan qoʻshing.
+
+## Vasiy maʼlumotlarini oʻzgartiring
+
+<Steps>
+  <Step title="Vasiyni oching">
+    Oʻquvchining **Vasiylar** varagʻida vasiyni tanlang. **Vasiy maʼlumotlari** paneli ochiladi.
+  </Step>
+  <Step title="Tahrirlang">
+    Qalam tugmasini bosing va **Ism**, **Familiya** yoki **Telefon**ni oʻzgartiring.
+  </Step>
+  <Step title="Saqlang">
+    **Saqlash** tugmasini bosing. Oʻzgarish bu vasiy ulangan barcha oʻquvchilarga taalluqli boʻladi.
+  </Step>
+</Steps>
+
+## Vasiyni boshqa oʻquvchiga ulang
+
+Vasiyning boshqa farzandi Cohortda allaqachon boʻlsa, shundan foydalaning.
+
+<Steps>
+  <Step title="Vasiyni oching">
+    Vasiy allaqachon ulangan oʻquvchining **Vasiylar** varagʻida vasiyni tanlang.
+  </Step>
+  <Step title="Oʻquvchini bogʻlang">
+    **Bogʻlangan oʻquvchilar** boʻlimida **Oʻquvchi bogʻlash** tugmasini bosing. **Oʻquvchi** va **Qarindoshligi**ni tanlang, **Asosiy vasiy** va **Olib ketishi mumkin**ni yoqing yoki oʻchiring.
+  </Step>
+  <Step title="Saqlang">
+    **Bogʻlash** tugmasini bosing.
+  </Step>
+</Steps>
+
+## Vasiyni olib tashlang
+
+Oʻquvchining **Vasiylar** varagʻida vasiy yonidagi chiqindi qutisi tugmasini bosing, soʻng **Olib tashlash**ni tanlang.
+
+Vasiy faqat shu oʻquvchidan uziladi. Uning yozuvi va boshqa farzandlari bilan bogʻlanishi saqlanib qoladi, shuning uchun keyinroq uni yana ulash mumkin. Oʻquvchini **Vasiy maʼlumotlari** panelidan ham uzish mumkin: **Bogʻlangan oʻquvchilar** boʻlimida oʻquvchi yonidagi chiqindi qutisi tugmasini bosing, soʻng **Bogʻlanishni uzish**ni tanlang.

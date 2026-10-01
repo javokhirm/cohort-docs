@@ -1,0 +1,91 @@
+---
+title: "Student wallet"
+description: "Top up a student's wallet, correct its balance, and use the money in it to pay invoices."
+icon: "wallet"
+keywords: ["balance", "credit", "prepayment", "top up", "overpayment"]
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+A student's wallet holds money they've paid in advance or paid too much, ready to be used on their invoices. The balance is in UZS and never goes below zero. You'll find it on the **Wallet** tab of the student's page.
+
+By default, owners, admins and managers can see the wallet and top it up. Only owners and admins can correct the balance or use it to pay an invoice.
+
+<RoleHint />
+
+## Top up the wallet
+
+Use this when a student pays you money that isn't for a particular invoice yet.
+
+<Steps>
+  <Step title="Open the wallet">
+    In the sidebar, select **Students**, select the student, then open the **Wallet** tab.
+  </Step>
+  <Step title="Start the deposit">
+    Select **Deposit**.
+  </Step>
+  <Step title="Enter the payment">
+    Enter the **Amount** and choose the **Method**: **Cash**, **Card** or **Bank transfer**. **Notes** are optional.
+  </Step>
+  <Step title="Confirm">
+    Select **Confirm deposit**. The deposit appears under **Recent transactions**, and it's also recorded as a payment received.
+  </Step>
+</Steps>
+
+## Correct the balance
+
+Use an adjustment to fix a mistake, for example a deposit entered twice. It changes the wallet only and isn't recorded as a payment.
+
+<Steps>
+  <Step title="Open the wallet">
+    On the student's **Wallet** tab, select **Adjust balance**. The **Current balance** is shown at the top.
+  </Step>
+  <Step title="Enter the correction">
+    Enter the **Amount**: a positive number adds to the balance, a negative one deducts from it. For example, enter `-200000` to take 200 000 UZS off. The balance can't go below zero.
+  </Step>
+  <Step title="Give a reason">
+    Enter the **Reason**. It's shown next to the adjustment in the wallet's history.
+  </Step>
+  <Step title="Confirm">
+    Select **Confirm adjustment**.
+  </Step>
+</Steps>
+
+## Use the balance on an invoice
+
+### Automatically
+
+When your center's billing policy has **Auto-apply wallet credit** turned on, Cohort uses the wallet to pay the invoices it generates each billing period, after any standing discount. To check the setting, select **Billing Policy** in the sidebar.
+
+### By hand
+
+For any other invoice, for example one you created yourself or one issued before the student topped up:
+
+<Steps>
+  <Step title="Open the invoice">
+    In the sidebar, select **Invoices**, then open the student's invoice. It must be **Unpaid**, **Partial** or **Overdue**.
+  </Step>
+  <Step title="Apply the credit">
+    Select **Apply wallet credit**. Cohort shows the **Wallet balance**, the **Amount due**, how much **Will be applied** and what's **Left in wallet**. It applies whichever is smaller: the whole balance, or the amount due.
+  </Step>
+  <Step title="Confirm">
+    Select **Apply wallet credit**.
+  </Step>
+</Steps>
+
+<Warning>
+  Paying from the wallet can't be undone, and a wallet payment can't be refunded. If the student paid in cash or by card for this invoice, select **Record payment** on the invoice instead.
+</Warning>
+
+## Wallet transactions
+
+**Recent transactions** lists the latest changes to the balance, newest first, with the date and any note.
+
+| Type | What it is |
+| --- | --- |
+| **Deposit** | Money you added with **Deposit**. |
+| **Overpayment** | The part of a payment that was more than the invoice owed. |
+| **Refund credit** | A refunded payment that was returned to the wallet. |
+| **Invoice payment** | Wallet money used to pay an invoice. |
+| **Adjustment** | A correction made with **Adjust balance**. |
+| **Cash out** | Wallet money paid back to the student. |

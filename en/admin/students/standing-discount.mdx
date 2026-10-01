@@ -1,0 +1,58 @@
+---
+title: "Give a standing discount"
+description: "Attach a discount to one of a student's enrollments so that every invoice generated for that group includes it automatically."
+icon: "badge-percent"
+keywords: ["permanent discount", "recurring discount", "sibling discount", "scholarship"]
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+A standing discount stays on one enrollment: one student in one group. Each time Cohort generates an invoice for that enrollment, it applies the discount automatically, until the end date you set or until you remove it. Use it for a sibling discount, a scholarship, or any other price agreed with one student.
+
+By default, owners and admins can give standing discounts.
+
+<RoleHint />
+
+## Before you start
+
+- The discount must exist and be active under **Discounts** in the sidebar. If there's none, the panel shows "No active discounts to assign — create one under Discounts first."
+
+## Give the discount
+
+<Steps>
+  <Step title="Open the student's enrollments">
+    In the sidebar, select **Students**, select the student, then open the **Enrollments** tab.
+  </Step>
+  <Step title="Open the standing discount panel">
+    In the row for the group, select the link in the **Standing discount** column. The **Standing discount** panel opens, with the group's name at the top.
+  </Step>
+  <Step title="Choose the discount">
+    Select one of your active discounts from the list.
+  </Step>
+  <Step title="Set an end date (optional)">
+    Under **Valid until**, choose the last date the discount should apply. Leave it blank to keep the discount with no end date.
+  </Step>
+  <Step title="Save">
+    Select **Save discount**. The discount now shows in the **Standing discount** column.
+  </Step>
+</Steps>
+
+## How it's applied
+
+- It applies to invoices Cohort generates for the enrollment from now on. Invoices that were already issued, and invoices you create by hand, don't change. To discount one of those, open the invoice and apply the discount there.
+- One enrollment can have several standing discounts, but each discount only once.
+- A standing discount doesn't use up the discount's usage limit, however many months it applies.
+- If the discount is turned off under **Discounts**, it stops being applied here too.
+
+## Remove a standing discount
+
+<Steps>
+  <Step title="Open the panel">
+    On the student's **Enrollments** tab, select **Manage** in the **Standing discount** column.
+  </Step>
+  <Step title="Remove the discount">
+    Under **Current**, select the trash button next to the discount, then confirm.
+  </Step>
+</Steps>
+
+Removing it doesn't change invoices that were already issued. To change the end date, remove the discount and give it again with the new date.
