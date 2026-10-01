@@ -1,0 +1,42 @@
+---
+title: "A student can't sign in"
+description: "What to check when a student can't sign in to the Student console: a missing password, or a wrong student code."
+icon: "lock"
+keywords: ["student login", "student code", "forgot password", "Invalid student code or password"]
+---
+
+Students sign in at [student.cohort.uz](https://student.cohort.uz) with their **Student code** and a **Password**, not with a phone number. When a student is turned away, Cohort shows the same message, “Invalid student code or password.”, whether the code is wrong, the password is wrong, or the student has no password yet. Check each of these.
+
+<AccordionGroup>
+  <Accordion title="The student has no password yet">
+    A new student can't sign in until someone at your center sets a password for them, and Cohort doesn't show whether one has been set. If you're not sure, set a new one: by default, owners and admins can. See [Reset a student's password](/en/admin/students/reset-a-student-password).
+
+    Then give the student the new password together with their student code.
+  </Accordion>
+
+  <Accordion title="The student code is wrong">
+    Each student has their own code: one letter followed by 7 digits, for example A1234567. Brothers and sisters have different codes, even when they share a parent's phone.
+
+    To find the right code, in the sidebar, select **Students** and search for the student. The code is in the **Code** column, and under the student's name on their page.
+
+    When the student types it:
+
+    - Capital or small letter doesn't matter: a1234567 works too.
+    - Everything after the first letter is a digit, so a character that looks like O is the digit 0.
+    - Type the code without spaces. If the code isn't one letter and 7 digits, the form shows a message under the field and doesn't try to sign in.
+  </Accordion>
+
+  <Accordion title="The password is wrong">
+    Students can't reset their own password. Set a new one for them: see [Reset a student's password](/en/admin/students/reset-a-student-password).
+  </Accordion>
+
+  <Accordion title="“Too many failed sign-in attempts for this account. Please wait before trying again.”">
+    After 10 failed attempts with the same student code within 15 minutes, signing in with that code is paused for up to 15 minutes. Wait, then try again with the correct code and password.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  A student's status doesn't affect signing in. Students marked **Inactive**, **Graduated** or **Suspended** can still sign in and see their invoices and history.
+</Note>
+
+For other messages on the sign-in page, see "If you can't sign in" on the [Sign in](/en/getting-started/sign-in) page.

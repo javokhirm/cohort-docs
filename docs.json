@@ -1,356 +1,404 @@
 {
-	"$schema": "https://mintlify.com/docs.json",
-	"theme": "mint",
-	"name": "Cohort",
-	"description": "Cohort help center: guides for education center staff, teachers and students.",
-	"colors": {
-		"primary": "#2A4FDB",
-		"light": "#7C9DF0",
-		"dark": "#2A4FDB"
-	},
-	"logo": {
-		"light": "/images/brand/logo-light.png",
-		"dark": "/images/brand/logo-dark.png"
-	},
-	"favicon": "/images/brand/favicon.svg",
-	"fonts": {
-		"family": "Inter"
-	},
-	"icons": {
-		"library": "lucide"
-	},
-	"metadata": {
-		"timestamp": true
-	},
-	"navigation": {
-		"languages": [
-			{
-				"language": "uz",
-				"default": true,
-				"navbar": {
-					"links": [{ "label": "Veb-sayt", "href": "https://cohort.uz/uz" }]
-				},
-				"tabs": [
-					{
-						"tab": "Boshlash",
-						"icon": "rocket",
-						"groups": [
-							{
-								"group": "Umumiy",
-								"pages": [
-									"uz/index",
-									"uz/getting-started/sign-in",
-									"uz/getting-started/first-time-setup",
-									"uz/getting-started/apps-and-roles"
-								]
-							}
-						]
-					},
-					{
-						"tab": "Xodimlar paneli",
-						"icon": "layout-dashboard",
-						"groups": [
-							{
-								"group": "Lidlar / Voronka",
-								"pages": ["uz/admin/leads/add-a-lead"]
-							},
-							{
-								"group": "Oʻquvchilar",
-								"pages": [
-									"uz/admin/students/add-a-student",
-									"uz/admin/students/edit-a-student",
-									"uz/admin/students/reset-a-student-password",
-									"uz/admin/students/guardians",
-									"uz/admin/students/student-profile",
-									"uz/admin/students/student-wallet",
-									"uz/admin/students/standing-discount",
-									"uz/admin/students/view-as-student"
-								]
-							},
-							{
-								"group": "Xodimlar va HR",
-								"pages": ["uz/admin/staff/add-a-staff-member"]
-							},
-							{
-								"group": "Kurslar",
-								"pages": ["uz/admin/courses/add-a-course"]
-							},
-							{
-								"group": "Xonalar",
-								"pages": ["uz/admin/rooms/add-a-room"]
-							},
-							{
-								"group": "Guruhlar",
-								"pages": [
-									"uz/admin/groups/add-a-group",
-									"uz/admin/groups/enroll-students",
-									"uz/admin/groups/suspend-drop-or-reactivate-an-enrollment",
-									"uz/admin/groups/complete-or-cancel-a-group",
-									"uz/admin/groups/grading-scales"
-								]
-							},
-							{
-								"group": "Invoyslar",
-								"pages": [
-									"uz/admin/invoices/how-invoicing-works",
-									"uz/admin/invoices/create-an-invoice",
-									"uz/admin/invoices/issue-an-invoice",
-									"uz/admin/invoices/record-a-payment",
-									"uz/admin/invoices/apply-a-discount",
-									"uz/admin/invoices/apply-wallet-credit",
-									"uz/admin/invoices/issue-a-credit-note",
-									"uz/admin/invoices/void-an-invoice"
-								]
-							},
-							{
-								"group": "Toʻlovlar",
-								"pages": ["uz/admin/payments/view-payments", "uz/admin/payments/refund-a-payment"]
-							},
-							{
-								"group": "Toʻlov rejalari",
-								"pages": ["uz/admin/fee-plans/add-a-fee-plan"]
-							},
-							{
-								"group": "Chegirmalar",
-								"pages": [
-									"uz/admin/discounts/discount-types",
-									"uz/admin/discounts/create-a-discount"
-								]
-							},
-							{
-								"group": "Xarajatlar",
-								"pages": ["uz/admin/expenses/record-an-expense"]
-							},
-							{
-								"group": "Filiallar",
-								"pages": [
-									"uz/admin/branches/how-branches-work",
-									"uz/admin/branches/add-a-branch"
-								]
-							}
-						]
-					}
-				]
-			},
-			{
-				"language": "ru",
-				"navbar": {
-					"links": [{ "label": "Сайт", "href": "https://cohort.uz/ru" }]
-				},
-				"tabs": [
-					{
-						"tab": "Начало работы",
-						"icon": "rocket",
-						"groups": [
-							{
-								"group": "Обзор",
-								"pages": [
-									"ru/index",
-									"ru/getting-started/sign-in",
-									"ru/getting-started/first-time-setup",
-									"ru/getting-started/apps-and-roles"
-								]
-							}
-						]
-					},
-					{
-						"tab": "Панель сотрудника",
-						"icon": "layout-dashboard",
-						"groups": [
-							{
-								"group": "Лиды / Воронка",
-								"pages": ["ru/admin/leads/add-a-lead"]
-							},
-							{
-								"group": "Ученики",
-								"pages": [
-									"ru/admin/students/add-a-student",
-									"ru/admin/students/edit-a-student",
-									"ru/admin/students/reset-a-student-password",
-									"ru/admin/students/guardians",
-									"ru/admin/students/student-profile",
-									"ru/admin/students/student-wallet",
-									"ru/admin/students/standing-discount",
-									"ru/admin/students/view-as-student"
-								]
-							},
-							{
-								"group": "Сотрудники и HR",
-								"pages": ["ru/admin/staff/add-a-staff-member"]
-							},
-							{
-								"group": "Курсы",
-								"pages": ["ru/admin/courses/add-a-course"]
-							},
-							{
-								"group": "Кабинеты",
-								"pages": ["ru/admin/rooms/add-a-room"]
-							},
-							{
-								"group": "Группы",
-								"pages": [
-									"ru/admin/groups/add-a-group",
-									"ru/admin/groups/enroll-students",
-									"ru/admin/groups/suspend-drop-or-reactivate-an-enrollment",
-									"ru/admin/groups/complete-or-cancel-a-group",
-									"ru/admin/groups/grading-scales"
-								]
-							},
-							{
-								"group": "Счета",
-								"pages": [
-									"ru/admin/invoices/how-invoicing-works",
-									"ru/admin/invoices/create-an-invoice",
-									"ru/admin/invoices/issue-an-invoice",
-									"ru/admin/invoices/record-a-payment",
-									"ru/admin/invoices/apply-a-discount",
-									"ru/admin/invoices/apply-wallet-credit",
-									"ru/admin/invoices/issue-a-credit-note",
-									"ru/admin/invoices/void-an-invoice"
-								]
-							},
-							{
-								"group": "Платежи",
-								"pages": ["ru/admin/payments/view-payments", "ru/admin/payments/refund-a-payment"]
-							},
-							{
-								"group": "Тарифные планы",
-								"pages": ["ru/admin/fee-plans/add-a-fee-plan"]
-							},
-							{
-								"group": "Скидки",
-								"pages": [
-									"ru/admin/discounts/discount-types",
-									"ru/admin/discounts/create-a-discount"
-								]
-							},
-							{
-								"group": "Расходы",
-								"pages": ["ru/admin/expenses/record-an-expense"]
-							},
-							{
-								"group": "Филиалы",
-								"pages": [
-									"ru/admin/branches/how-branches-work",
-									"ru/admin/branches/add-a-branch"
-								]
-							}
-						]
-					}
-				]
-			},
-			{
-				"language": "en",
-				"navbar": {
-					"links": [{ "label": "Website", "href": "https://cohort.uz/en" }]
-				},
-				"tabs": [
-					{
-						"tab": "Get started",
-						"icon": "rocket",
-						"groups": [
-							{
-								"group": "Overview",
-								"pages": [
-									"en/index",
-									"en/getting-started/sign-in",
-									"en/getting-started/first-time-setup",
-									"en/getting-started/apps-and-roles"
-								]
-							}
-						]
-					},
-					{
-						"tab": "Staff console",
-						"icon": "layout-dashboard",
-						"groups": [
-							{
-								"group": "Leads / Pipeline",
-								"pages": ["en/admin/leads/add-a-lead"]
-							},
-							{
-								"group": "Students",
-								"pages": [
-									"en/admin/students/add-a-student",
-									"en/admin/students/edit-a-student",
-									"en/admin/students/reset-a-student-password",
-									"en/admin/students/guardians",
-									"en/admin/students/student-profile",
-									"en/admin/students/student-wallet",
-									"en/admin/students/standing-discount",
-									"en/admin/students/view-as-student"
-								]
-							},
-							{
-								"group": "Staff & HR",
-								"pages": ["en/admin/staff/add-a-staff-member"]
-							},
-							{
-								"group": "Courses",
-								"pages": ["en/admin/courses/add-a-course"]
-							},
-							{
-								"group": "Rooms",
-								"pages": ["en/admin/rooms/add-a-room"]
-							},
-							{
-								"group": "Groups",
-								"pages": [
-									"en/admin/groups/add-a-group",
-									"en/admin/groups/enroll-students",
-									"en/admin/groups/suspend-drop-or-reactivate-an-enrollment",
-									"en/admin/groups/complete-or-cancel-a-group",
-									"en/admin/groups/grading-scales"
-								]
-							},
-							{
-								"group": "Invoices",
-								"pages": [
-									"en/admin/invoices/how-invoicing-works",
-									"en/admin/invoices/create-an-invoice",
-									"en/admin/invoices/issue-an-invoice",
-									"en/admin/invoices/record-a-payment",
-									"en/admin/invoices/apply-a-discount",
-									"en/admin/invoices/apply-wallet-credit",
-									"en/admin/invoices/issue-a-credit-note",
-									"en/admin/invoices/void-an-invoice"
-								]
-							},
-							{
-								"group": "Payments",
-								"pages": ["en/admin/payments/view-payments", "en/admin/payments/refund-a-payment"]
-							},
-							{
-								"group": "Fee Plans",
-								"pages": ["en/admin/fee-plans/add-a-fee-plan"]
-							},
-							{
-								"group": "Discounts",
-								"pages": [
-									"en/admin/discounts/discount-types",
-									"en/admin/discounts/create-a-discount"
-								]
-							},
-							{
-								"group": "Expenses",
-								"pages": ["en/admin/expenses/record-an-expense"]
-							},
-							{
-								"group": "Branches",
-								"pages": [
-									"en/admin/branches/how-branches-work",
-									"en/admin/branches/add-a-branch"
-								]
-							}
-						]
-					}
-				]
-			}
-		]
-	},
-	"footer": {
-		"socials": {
-			"website": "https://cohort.uz"
-		}
-	}
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Cohort",
+    "description": "Cohort help center: guides for education center staff, teachers and students.",
+    "colors": {
+        "primary": "#2A4FDB",
+        "light": "#7C9DF0",
+        "dark": "#2A4FDB"
+    },
+    "logo": {
+        "light": "/images/brand/logo-light.png",
+        "dark": "/images/brand/logo-dark.png"
+    },
+    "favicon": "/images/brand/favicon.svg",
+    "fonts": {
+        "family": "Inter"
+    },
+    "icons": {
+        "library": "lucide"
+    },
+    "metadata": {
+        "timestamp": true
+    },
+    "navigation": {
+        "languages": [
+            {
+                "language": "uz",
+                "default": true,
+                "navbar": {
+                    "links": [
+                        { "label": "Veb-sayt", "href": "https://cohort.uz/uz" }
+                    ]
+                },
+                "tabs": [
+                    {
+                        "tab": "Boshlash",
+                        "icon": "rocket",
+                        "groups": [
+                            {
+                                "group": "Umumiy",
+                                "pages": [
+                                    "uz/index",
+                                    "uz/getting-started/sign-in",
+                                    "uz/getting-started/first-time-setup",
+                                    "uz/getting-started/apps-and-roles"
+                                ]
+                            },
+                            {
+                                "group": "Muammolarni hal qilish",
+                                "pages": [
+                                    "uz/troubleshooting/cant-see-a-menu-item-or-button",
+                                    "uz/troubleshooting/student-cant-sign-in",
+                                    "uz/troubleshooting/group-is-full",
+                                    "uz/troubleshooting/guardian-phone-already-exists",
+                                    "uz/troubleshooting/sms-not-delivered",
+                                    "uz/troubleshooting/invoice-missing-or-wrong-amount"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "Xodimlar paneli",
+                        "icon": "layout-dashboard",
+                        "groups": [
+                            {
+                                "group": "Lidlar / Voronka",
+                                "pages": ["uz/admin/leads/add-a-lead"]
+                            },
+                            {
+                                "group": "Oʻquvchilar",
+                                "pages": [
+                                    "uz/admin/students/add-a-student",
+                                    "uz/admin/students/edit-a-student",
+                                    "uz/admin/students/reset-a-student-password",
+                                    "uz/admin/students/guardians",
+                                    "uz/admin/students/student-profile",
+                                    "uz/admin/students/student-wallet",
+                                    "uz/admin/students/standing-discount",
+                                    "uz/admin/students/view-as-student"
+                                ]
+                            },
+                            {
+                                "group": "Xodimlar va HR",
+                                "pages": ["uz/admin/staff/add-a-staff-member"]
+                            },
+                            {
+                                "group": "Kurslar",
+                                "pages": ["uz/admin/courses/add-a-course"]
+                            },
+                            {
+                                "group": "Xonalar",
+                                "pages": ["uz/admin/rooms/add-a-room"]
+                            },
+                            {
+                                "group": "Guruhlar",
+                                "pages": [
+                                    "uz/admin/groups/add-a-group",
+                                    "uz/admin/groups/enroll-students",
+                                    "uz/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+                                    "uz/admin/groups/complete-or-cancel-a-group",
+                                    "uz/admin/groups/grading-scales"
+                                ]
+                            },
+                            {
+                                "group": "Invoyslar",
+                                "pages": [
+                                    "uz/admin/invoices/how-invoicing-works",
+                                    "uz/admin/invoices/create-an-invoice",
+                                    "uz/admin/invoices/issue-an-invoice",
+                                    "uz/admin/invoices/record-a-payment",
+                                    "uz/admin/invoices/apply-a-discount",
+                                    "uz/admin/invoices/apply-wallet-credit",
+                                    "uz/admin/invoices/issue-a-credit-note",
+                                    "uz/admin/invoices/void-an-invoice"
+                                ]
+                            },
+                            {
+                                "group": "Toʻlovlar",
+                                "pages": [
+                                    "uz/admin/payments/view-payments",
+                                    "uz/admin/payments/refund-a-payment"
+                                ]
+                            },
+                            {
+                                "group": "Toʻlov rejalari",
+                                "pages": ["uz/admin/fee-plans/add-a-fee-plan"]
+                            },
+                            {
+                                "group": "Chegirmalar",
+                                "pages": [
+                                    "uz/admin/discounts/discount-types",
+                                    "uz/admin/discounts/create-a-discount"
+                                ]
+                            },
+                            {
+                                "group": "Xarajatlar",
+                                "pages": ["uz/admin/expenses/record-an-expense"]
+                            },
+                            {
+                                "group": "Filiallar",
+                                "pages": [
+                                    "uz/admin/branches/how-branches-work",
+                                    "uz/admin/branches/add-a-branch"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "language": "ru",
+                "navbar": {
+                    "links": [
+                        { "label": "Сайт", "href": "https://cohort.uz/ru" }
+                    ]
+                },
+                "tabs": [
+                    {
+                        "tab": "Начало работы",
+                        "icon": "rocket",
+                        "groups": [
+                            {
+                                "group": "Обзор",
+                                "pages": [
+                                    "ru/index",
+                                    "ru/getting-started/sign-in",
+                                    "ru/getting-started/first-time-setup",
+                                    "ru/getting-started/apps-and-roles"
+                                ]
+                            },
+                            {
+                                "group": "Решение проблем",
+                                "pages": [
+                                    "ru/troubleshooting/cant-see-a-menu-item-or-button",
+                                    "ru/troubleshooting/student-cant-sign-in",
+                                    "ru/troubleshooting/group-is-full",
+                                    "ru/troubleshooting/guardian-phone-already-exists",
+                                    "ru/troubleshooting/sms-not-delivered",
+                                    "ru/troubleshooting/invoice-missing-or-wrong-amount"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "Панель сотрудника",
+                        "icon": "layout-dashboard",
+                        "groups": [
+                            {
+                                "group": "Лиды / Воронка",
+                                "pages": ["ru/admin/leads/add-a-lead"]
+                            },
+                            {
+                                "group": "Ученики",
+                                "pages": [
+                                    "ru/admin/students/add-a-student",
+                                    "ru/admin/students/edit-a-student",
+                                    "ru/admin/students/reset-a-student-password",
+                                    "ru/admin/students/guardians",
+                                    "ru/admin/students/student-profile",
+                                    "ru/admin/students/student-wallet",
+                                    "ru/admin/students/standing-discount",
+                                    "ru/admin/students/view-as-student"
+                                ]
+                            },
+                            {
+                                "group": "Сотрудники и HR",
+                                "pages": ["ru/admin/staff/add-a-staff-member"]
+                            },
+                            {
+                                "group": "Курсы",
+                                "pages": ["ru/admin/courses/add-a-course"]
+                            },
+                            {
+                                "group": "Кабинеты",
+                                "pages": ["ru/admin/rooms/add-a-room"]
+                            },
+                            {
+                                "group": "Группы",
+                                "pages": [
+                                    "ru/admin/groups/add-a-group",
+                                    "ru/admin/groups/enroll-students",
+                                    "ru/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+                                    "ru/admin/groups/complete-or-cancel-a-group",
+                                    "ru/admin/groups/grading-scales"
+                                ]
+                            },
+                            {
+                                "group": "Счета",
+                                "pages": [
+                                    "ru/admin/invoices/how-invoicing-works",
+                                    "ru/admin/invoices/create-an-invoice",
+                                    "ru/admin/invoices/issue-an-invoice",
+                                    "ru/admin/invoices/record-a-payment",
+                                    "ru/admin/invoices/apply-a-discount",
+                                    "ru/admin/invoices/apply-wallet-credit",
+                                    "ru/admin/invoices/issue-a-credit-note",
+                                    "ru/admin/invoices/void-an-invoice"
+                                ]
+                            },
+                            {
+                                "group": "Платежи",
+                                "pages": [
+                                    "ru/admin/payments/view-payments",
+                                    "ru/admin/payments/refund-a-payment"
+                                ]
+                            },
+                            {
+                                "group": "Тарифные планы",
+                                "pages": ["ru/admin/fee-plans/add-a-fee-plan"]
+                            },
+                            {
+                                "group": "Скидки",
+                                "pages": [
+                                    "ru/admin/discounts/discount-types",
+                                    "ru/admin/discounts/create-a-discount"
+                                ]
+                            },
+                            {
+                                "group": "Расходы",
+                                "pages": ["ru/admin/expenses/record-an-expense"]
+                            },
+                            {
+                                "group": "Филиалы",
+                                "pages": [
+                                    "ru/admin/branches/how-branches-work",
+                                    "ru/admin/branches/add-a-branch"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "language": "en",
+                "navbar": {
+                    "links": [
+                        { "label": "Website", "href": "https://cohort.uz/en" }
+                    ]
+                },
+                "tabs": [
+                    {
+                        "tab": "Get started",
+                        "icon": "rocket",
+                        "groups": [
+                            {
+                                "group": "Overview",
+                                "pages": [
+                                    "en/index",
+                                    "en/getting-started/sign-in",
+                                    "en/getting-started/first-time-setup",
+                                    "en/getting-started/apps-and-roles"
+                                ]
+                            },
+                            {
+                                "group": "Troubleshooting",
+                                "pages": [
+                                    "en/troubleshooting/cant-see-a-menu-item-or-button",
+                                    "en/troubleshooting/student-cant-sign-in",
+                                    "en/troubleshooting/group-is-full",
+                                    "en/troubleshooting/guardian-phone-already-exists",
+                                    "en/troubleshooting/sms-not-delivered",
+                                    "en/troubleshooting/invoice-missing-or-wrong-amount"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "tab": "Staff console",
+                        "icon": "layout-dashboard",
+                        "groups": [
+                            {
+                                "group": "Leads / Pipeline",
+                                "pages": ["en/admin/leads/add-a-lead"]
+                            },
+                            {
+                                "group": "Students",
+                                "pages": [
+                                    "en/admin/students/add-a-student",
+                                    "en/admin/students/edit-a-student",
+                                    "en/admin/students/reset-a-student-password",
+                                    "en/admin/students/guardians",
+                                    "en/admin/students/student-profile",
+                                    "en/admin/students/student-wallet",
+                                    "en/admin/students/standing-discount",
+                                    "en/admin/students/view-as-student"
+                                ]
+                            },
+                            {
+                                "group": "Staff & HR",
+                                "pages": ["en/admin/staff/add-a-staff-member"]
+                            },
+                            {
+                                "group": "Courses",
+                                "pages": ["en/admin/courses/add-a-course"]
+                            },
+                            {
+                                "group": "Rooms",
+                                "pages": ["en/admin/rooms/add-a-room"]
+                            },
+                            {
+                                "group": "Groups",
+                                "pages": [
+                                    "en/admin/groups/add-a-group",
+                                    "en/admin/groups/enroll-students",
+                                    "en/admin/groups/suspend-drop-or-reactivate-an-enrollment",
+                                    "en/admin/groups/complete-or-cancel-a-group",
+                                    "en/admin/groups/grading-scales"
+                                ]
+                            },
+                            {
+                                "group": "Invoices",
+                                "pages": [
+                                    "en/admin/invoices/how-invoicing-works",
+                                    "en/admin/invoices/create-an-invoice",
+                                    "en/admin/invoices/issue-an-invoice",
+                                    "en/admin/invoices/record-a-payment",
+                                    "en/admin/invoices/apply-a-discount",
+                                    "en/admin/invoices/apply-wallet-credit",
+                                    "en/admin/invoices/issue-a-credit-note",
+                                    "en/admin/invoices/void-an-invoice"
+                                ]
+                            },
+                            {
+                                "group": "Payments",
+                                "pages": [
+                                    "en/admin/payments/view-payments",
+                                    "en/admin/payments/refund-a-payment"
+                                ]
+                            },
+                            {
+                                "group": "Fee Plans",
+                                "pages": ["en/admin/fee-plans/add-a-fee-plan"]
+                            },
+                            {
+                                "group": "Discounts",
+                                "pages": [
+                                    "en/admin/discounts/discount-types",
+                                    "en/admin/discounts/create-a-discount"
+                                ]
+                            },
+                            {
+                                "group": "Expenses",
+                                "pages": ["en/admin/expenses/record-an-expense"]
+                            },
+                            {
+                                "group": "Branches",
+                                "pages": [
+                                    "en/admin/branches/how-branches-work",
+                                    "en/admin/branches/add-a-branch"
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "footer": {
+        "socials": {
+            "website": "https://cohort.uz"
+        }
+    }
 }

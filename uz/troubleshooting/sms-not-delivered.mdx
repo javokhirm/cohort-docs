@@ -1,0 +1,86 @@
+---
+title: "SMS yetib bormadi"
+description: "SMS oʻquvchi yoki vasiyga nega yetib bormaganini aniqlang: yuborilganlar roʻyxati, shablon tasdigʻi, SMS tugmasi va kunlik cheklov."
+icon: "message-square"
+keywords: ["SMS kelmadi", "yuborilganlar", "shablon tasdigʻi", "moderatsiya", "kunlik cheklov"]
+---
+
+Standart holatda Cohort nima yuborganini koʻrish uchun egasi va administrator yon menyudagi **Bildirishnomalar** boʻlimini ocha oladi. SMS yoqiladigan va oʻchiriladigan **Sozlamalar** varagʻini faqat egasi koʻradi.
+
+## Yuborilganlar roʻyxatidan boshlang
+
+<Steps>
+  <Step title="Yuborilganlarni oching">
+    Yon menyuda **Bildirishnomalar** boʻlimini oching, soʻng **Yuborilganlar** varagʻini oching.
+  </Step>
+  <Step title="Roʻyxatni qisqartiring">
+    Davrni tanlang: **Bugun**, **7 kun**, **30 kun** yoki **Butun vaqt**. Xohlasangiz, holatni ham tanlang.
+  </Step>
+  <Step title="Xabarni toping">
+    Qabul qiluvchining ismi yoki telefon raqamini toping va xabar holatini tekshiring.
+  </Step>
+</Steps>
+
+| Holat | Nimani anglatadi |
+| --- | --- |
+| **Navbatda** | Yuborilishini kutmoqda. Kunlik cheklov sababli yoki SMS oʻchirilganda ushlab turilgan xabarlar shu yerda kutadi. |
+| **Yuborilmoqda** | Hozir SMS operatoriga uzatilmoqda. |
+| **Yuborildi** | SMS operatori xabarni qabul qildi. |
+| **Xatolik** | Xabar yuborilmadi. Sababi uning ostida, **Qayta yuborish** tugmasi yonida koʻrsatiladi. |
+
+**Qayta yuborish** xuddi shu matnni xuddi shu raqamga qayta yuboradi. Xatolik sababi tarjima qilinmaydi: u ingliz tilida, SMS operatoridan kelganda esa rus tilida boʻladi.
+
+Xabar roʻyxatda umuman boʻlmasa, sahifa oxiridagi “Roʻyxatda xabar yoʻq” boʻlimiga qarang.
+
+## Asosiy sabablar
+
+<AccordionGroup>
+  <Accordion title="Shablon tasdiqlanmagan">
+    Oʻzbekistondagi SMS operatorlari faqat oldindan tasdiqlangan matnni yetkazadi. Shablon har safar saqlanganda Cohort uning matnini operatorga tasdiqlash uchun yuboradi. Matn tasdiqlanmaguncha shu matndagi xabarlar xatolik bilan tugaydi, yuborilganlar roʻyxatidagi sabab esa rus tilida matn moderatsiyadan oʻtmaganini bildiradi.
+
+    Tekshirish uchun **Shablonlar** varagʻini oching. Hali yuborib boʻlmaydigan shablon yonida belgi turadi. Shablonni tanlang va **SMS operator tasdigi** boʻlimida uning holatini koʻring:
+
+    - **Tekshiruvda**: operator matnni hali tekshirmoqda. **Tasdiqlangan** boʻlishini kuting, soʻng xatolik bilan tugagan xabarlarda **Qayta yuborish** tugmasini bosing.
+    - **Rad etilgan**: operator matnni rad etdi. Matnni oʻzgartiring va **Shablonni saqlash** tugmasini bosing. Aynan shu matnni qayta saqlash yordam bermaydi.
+    - **Yuborilmadi**: Cohort operator bilan bogʻlana olmadi. Shablonni oching va **Shablonni saqlash** tugmasini yana bosing.
+
+    **Shablonlar** varagʻida faqat yoqilgan qoidalar foydalanadigan shablonlar koʻrsatiladi.
+  </Accordion>
+
+  <Accordion title="SMS oʻchirilgan">
+    **Bildirishnomalar** sahifasining yuqori qismida egasi **SMS oʻchirilgan** yozuvini koʻradi. SMS oʻchirilganda:
+
+    - Qoidalar xabar yaratmaydi va bu xabarlar SMS qayta yoqilgandan keyin ham yuborilmaydi.
+    - Allaqachon **Navbatda** turgan xabarlar kutadi va SMS yana yoqilgach yuboriladi.
+
+    Yoqish uchun egasi **Sozlamalar** varagʻini ochadi, **SMS kanali** kartasidagi tugmani yoqadi va **Saqlash** tugmasini bosadi.
+  </Accordion>
+
+  <Accordion title="Kunlik cheklovga yetildi">
+    **Sozlamalar** varagʻida **Kunlik cheklov (xabarlar)** belgilanishi mumkin. Sahifaning yuqori qismida egasi bugun nechta xabar yuborilganini cheklov bilan birga koʻradi, masalan, *120 / 120 bugun*.
+
+    Cheklovga yetilgach, Cohort qolgan xabarlarni ushlab turadi: ular **Navbatda** holatida qoladi va keyingi kun boshidan yuboriladi. Cheklovni oshirish ularni ertaroq yubormaydi.
+
+    Cheklovni oʻzgartirish uchun egasi **Kunlik cheklov (xabarlar)** maydoniga yangi son kiritadi yoki cheklovsiz qilish uchun uni boʻsh qoldiradi, soʻng **Saqlash** tugmasini bosadi.
+  </Accordion>
+
+  <Accordion title="“SMS yoqilgan, lekin yuborish mumkin emas — provayder maʼlumotlari toʻliq emas.”">
+    SMS yoqilgan, lekin Cohortda xabar yuborish uchun ishlaydigan SMS hisobi yoʻq, shuning uchun xabarlar xatolik bilan tugaydi. Sahifaning yuqori qismida egasi **SMS sozlanmagan** yozuvini koʻradi.
+
+    Markazingiz oʻz Eskiz hisobidan foydalansa, **Sozlamalar** varagʻida **Provayder login** va **Provayder siri**ni tekshiring. Aks holda Cohort qoʻllab-quvvatlash xizmatiga murojaat qiling.
+  </Accordion>
+
+  <Accordion title="Telefon raqami notoʻgʻri">
+    Xabar xatolik bilan tugagan va sabab qaysi raqamga yuborishga urinilganini koʻrsatadi. Oʻquvchi yoki vasiy yozuvidagi raqamni tuzating. Shundan keyingi xabarlar yangi raqamga boradi.
+
+    Allaqachon xatolik bilan tugagan xabar uchun **Qayta yuborish** yordam bermaydi: u eski raqamga yuboradi.
+  </Accordion>
+</AccordionGroup>
+
+## Roʻyxatda xabar yoʻq
+
+Xabar yuborilganlar roʻyxatida umuman boʻlmasa, Cohort uni hech qachon yaratmagan. Bu quyidagi hollarda boʻladi:
+
+- Oʻsha paytda SMS oʻchirilgan edi.
+- Qoida oʻchirilgan. **Qoidalar** varagʻida qoida tugmasi yoqilganini tekshiring. Oʻchirilgan qoida hech narsa yubormaydi.
+- Qabul qiluvchida telefon raqami yoʻq. Xabarni kim olishi qoidadagi **Qabul qiluvchilar** sozlamasiga bogʻliq. **Ota-ona** uchun xabarlar oʻquvchining asosiy vasiysiga boradi, shuning uchun asosiy vasiysi yoʻq yoki asosiy vasiysining telefoni yoʻq oʻquvchiga hech narsa bormaydi. [Vasiylarni boshqarish](/uz/admin/students/guardians) sahifasiga qarang.

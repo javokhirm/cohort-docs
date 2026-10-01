@@ -1,0 +1,96 @@
+---
+title: "Invoys chiqmadi yoki summasi notoʻgʻri"
+description: "Avtomatik invoys nega hali chiqmagani yoki summasi toʻlov rejasidagidan farq qilishi va buni qanday tuzatish mumkin."
+icon: "receipt"
+keywords: ["invoys yoʻq", "invoys yaratilmadi", "notoʻgʻri summa", "qismli hisoblash", "billing siyosati"]
+---
+
+Cohort oʻqish toʻlovi invoyslarini markazingiz billing siyosatiga koʻra har kuni tunda avtomatik yaratadi. Yoʻqdek yoki notoʻgʻridek koʻringan invoyslarning koʻpi siyosat qanday sozlangan boʻlsa, shunday ishlayotganini bildiradi, shuning uchun undan boshlang.
+
+## Billing siyosatini tekshiring
+
+Yon menyuda **Billing siyosati** boʻlimini oching. Standart holatda uni egasi, administrator va menejer koʻra oladi. Invoys qachon chiqishi va qancha boʻlishini belgilaydigan sozlamalar:
+
+| Sozlama | Nimani belgilaydi |
+| --- | --- |
+| **Hisob-kitob rejimi** | **Oldindan — oldindan hisoblanadi**: har bir davr boshida invoys chiqariladi. **Keyin — keyin hisoblanadi**: oy tugagach, oʻtgan oy uchun invoys chiqariladi. |
+| **Hisob-kitob davri** | **Kalendar oyi**: hammaga har oyning **Hisob-kitob kuni**dan boshlab invoys chiqariladi. **Qabul yilligi**: har bir oʻquvchiga u boshlagan kunga mos oy kunida invoys chiqariladi, masalan, 12-iyuldan 11-avgustgacha, soʻng 12-avgustdan 11-sentyabrgacha. |
+| **Qabulda hisoblash** | Yangi qabul qilingan oʻquvchining birinchi invoysi darhol chiqariladimi yoki keyingi tungi ishga tushishda. |
+| **Standart qismli hisoblash** | Kalendar oyining oʻrtasida qoʻshilgan oʻquvchi shu birinchi oy uchun qancha toʻlashi. |
+| **Sarf qoidasi** | Har dars uchun hisoblanadigan toʻlov rejalarida qaysi darslar uchun haq olinishi. |
+
+Bu sozlamalarni oʻzingiz oʻzgartira olmaysiz. Ularni oʻzgartirish uchun Cohort qoʻllab-quvvatlash xizmatiga murojaat qiling. Oʻzgarish keyingi tungi ishga tushishdan kuchga kiradi va allaqachon chiqarilgan invoyslarni hech qachon oʻzgartirmaydi.
+
+## Invoys chiqmagan
+
+<AccordionGroup>
+  <Accordion title="Muddati hali kelmagan">
+    - **Kalendar oyi**: invoyslar har oyning **Hisob-kitob kuni**dan boshlab chiqadi.
+    - **Qabul yilligi**: keyingi invoys oʻquvchining keyingi davri boshlanadigan kuni chiqadi.
+    - **Keyin — keyin hisoblanadi**: oy uchun invoys oy tugagach, keyingi oyning **Hisob-kitob kuni**dan boshlab chiqadi.
+  </Accordion>
+
+  <Accordion title="Oʻquvchi yaqinda qabul qilingan">
+    **Qabulda hisoblash** oʻchirilgan boʻlsa, birinchi invoys oʻquvchini qabul qilgan zahotingiz emas, keyingi tungi ishga tushishdan keyin chiqadi. Qabulning boshlanish sanasi kelajakda boʻlsa, shu sanagacha hech narsa hisoblanmaydi.
+  </Accordion>
+
+  <Accordion title="Qabul faol emas">
+    Cohort faqat faol qabullar uchun invoys chiqaradi. Butun billing davri davomida qabuli toʻxtatilgan oʻquvchiga shu davr uchun invoys chiqarilmaydi. Oʻquvchi guruhdan chiqarilgach, Cohort unga invoys chiqarishni toʻxtatadi: **Keyin — keyin hisoblanadi** rejimida uning oxirgi, toʻliq boʻlmagan oyi uchun invoys oʻquvchini chiqargan paytingizda chiqariladi. Oʻquvchining **Qabullar** varagʻini tekshiring.
+  </Accordion>
+
+  <Accordion title="Kursning toʻlov rejasi har dars uchun">
+    **Har dars uchun** toʻlov rejasi boʻyicha invoys oy tugagach, **Sarf qoidasi**ga koʻra hisoblangan darslar uchun chiqariladi. Birorta dars hisoblanmagan boʻlsa, invoys chiqmaydi. Bekor qilingan darslar uchun hech qachon haq olinmaydi.
+
+    Cohort bunday invoyslarni faqat **Hisob-kitob rejimi** **Keyin — keyin hisoblanadi** boʻlganda avtomatik yaratadi. **Oldindan — oldindan hisoblanadi** rejimida Cohort qoʻllab-quvvatlash xizmatiga murojaat qiling yoki [invoyslarni qoʻlda yarating](/uz/admin/invoices/create-an-invoice).
+  </Accordion>
+
+  <Accordion title="Invoys bekor qilingan">
+    Cohort bekor qilingan avtomatik invoys oʻrniga yangisini yaratmaydi. Shu davr uchun toʻlov olish uchun [invoysni qoʻlda yarating](/uz/admin/invoices/create-an-invoice).
+  </Accordion>
+
+  <Accordion title="Invoys bor, lekin topa olmayapsiz">
+    - **Invoyslar** roʻyxatiga filtr qoʻllangan boʻlishi mumkin. **Filtrlarni tozalash** tugmasini bosing.
+    - Oʻquvchi sahifasidagi **Invoyslar** varagʻida uning barcha invoyslari koʻrsatiladi.
+    - Oʻquvchi invoysni koʻrmayotganini aytsa, uning holatini tekshiring. **Qoralama** invoys chiqarilmaguncha oʻquvchiga koʻrinmaydi: [Invoysni chiqarish](/uz/admin/invoices/issue-an-invoice) sahifasiga qarang.
+  </Accordion>
+</AccordionGroup>
+
+## Summa notoʻgʻri koʻrinadi
+
+<AccordionGroup>
+  <Accordion title="Birinchi invoys toʻlov rejasidagidan kam">
+    **Kalendar oyi** davrida oy oʻrtasida qoʻshilgan oʻquvchi **Standart qismli hisoblash**ga koʻra faqat qatnashadigan qismi uchun toʻlaydi. Qatorning tavsifi oxirida hisoblangan ulush koʻrsatiladi, masalan, “(prorated 8/12)”: oydagi 12 ta darsdan yoki kundan 8 tasi.
+
+    **Qabul yilligi** davrida birinchi invoys hech qachon bunday kamaytirilmaydi: har bir davr toʻliq boʻladi.
+  </Accordion>
+
+  <Accordion title="Boshqa sababga koʻra kam">
+    - Oʻquvchi qabulidagi doimiy chegirma Cohort shu qabul uchun yaratadigan har bir invoysga avtomatik qoʻllanadi. [Doimiy chegirma berish](/uz/admin/students/standing-discount) sahifasiga qarang.
+    - **Hamyon mablagʻini avtomatik qoʻllash** yoqilgan boʻlsa, oʻquvchi hamyonidagi pul darhol ishlatiladi. **Jami** oʻzgarmaydi, lekin **Toʻlangan** qatorida shu mablagʻ koʻrinadi va **Qoldiq** kamayadi. [Oʻquvchi hamyoni](/uz/admin/students/student-wallet) sahifasiga qarang.
+  </Accordion>
+
+  <Accordion title="Toʻlov rejasidagidan koʻp">
+    Billing siyosatingizda **Kechikish jarimalari** yoqilgan boʻlsa, Cohort muddati oʻtgan invoysga kechikish jarimasi qatorini qoʻshadi. [Invoyslar qanday ishlaydi](/uz/admin/invoices/how-invoicing-works) sahifasiga qarang.
+  </Accordion>
+
+  <Accordion title="Har dars uchun invoys summasi kutilmagan">
+    Summa hisoblangan darslar sonining rejadagi bir dars narxiga koʻpaytmasiga teng. Qaysi darslar hisoblanishi **Sarf qoidasi**ga bogʻliq: **Qatnashgan + sababsiz**, **Barcha rejalashtirilgan** yoki **Faqat qatnashgan**.
+  </Accordion>
+
+  <Accordion title="Eski narx qolgan">
+    Har bir invoysda toʻlov rejasining invoys yaratilgan paytdagi narxi saqlanadi. Toʻlov rejasi narxini oʻzgartirganingizdan keyin yangi narx faqat yangi invoyslarga qoʻllanadi.
+  </Accordion>
+</AccordionGroup>
+
+## Invoysni tuzating
+
+Chiqarilgan invoys qatorlarini oʻzgartirib boʻlmaydi. Buning oʻrniga:
+
+- Summani kamaytirish uchun farq summasiga [kredit-nota chiqaring](/uz/admin/invoices/issue-a-credit-note) yoki [chegirma qoʻllang](/uz/admin/invoices/apply-a-discount).
+- Invoysni butunlay almashtirish uchun uni [bekor qiling](/uz/admin/invoices/void-an-invoice) va [toʻgʻrisini qoʻlda yarating](/uz/admin/invoices/create-an-invoice).
+
+Standart holatda bularni egasi va administrator bajara oladi.
+
+<Warning>
+  Bekor qilishni ortga qaytarib boʻlmaydi, Cohort esa shu davr uchun avtomatik invoysni qayta yaratmaydi. Oʻrniga yangisini oʻzingiz yarating.
+</Warning>

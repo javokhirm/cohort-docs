@@ -1,0 +1,96 @@
+---
+title: "An invoice is missing or has the wrong amount"
+description: "Why an automatic invoice hasn't appeared yet, or shows a different amount than the fee plan, and how to put it right."
+icon: "receipt"
+keywords: ["no invoice", "invoice not generated", "wrong amount", "prorated", "billing policy"]
+---
+
+Cohort creates tuition invoices automatically, once a day overnight, following your center's billing policy. Most invoices that look missing or wrong are the policy doing what it's set to do, so start there.
+
+## Check your billing policy
+
+In the sidebar, select **Billing Policy**. By default, owners, admins and managers can see it. The settings that decide when an invoice appears and how much it's for:
+
+| Setting | What it decides |
+| --- | --- |
+| **Billing mode** | **Prepaid — billed in advance**: an invoice at the start of each period. **Postpaid — billed in arrears**: an invoice after a month ends, for the month that just finished. |
+| **Billing cycle** | **Calendar month**: everyone is billed from the **Billing day** each month. **Enrollment anniversary**: each student is billed on the day of the month they started, for example from 12 Jul to 11 Aug, then from 12 Aug to 11 Sep. |
+| **Charge on enrollment** | Whether a newly enrolled student's first invoice is issued straight away, or in the next overnight run. |
+| **Default proration** | How much a student who joins partway through a calendar month pays for that first month. |
+| **Consumption rule** | For fee plans billed per session: which classes are charged. |
+
+You can't change these settings yourself. Contact Cohort support to change them. A change applies from the next overnight run and never alters invoices that were already issued.
+
+## The invoice is missing
+
+<AccordionGroup>
+  <Accordion title="It isn't due yet">
+    - **Calendar month**: invoices appear from the **Billing day** of each month.
+    - **Enrollment anniversary**: the next invoice appears on the day the student's next cycle starts.
+    - **Postpaid — billed in arrears**: a month's invoice appears after that month ends, from the **Billing day** of the next month.
+  </Accordion>
+
+  <Accordion title="The student was enrolled recently">
+    If **Charge on enrollment** is off, the first invoice appears after the next overnight run, not the moment you enroll the student. If the enrollment's start date is in the future, nothing is billed before that date.
+  </Accordion>
+
+  <Accordion title="The enrollment isn't active">
+    Cohort only bills active enrollments. A student who was suspended for the whole billing period isn't billed for it. Once a student is dropped, Cohort stops billing them: under **Postpaid — billed in arrears**, their last, partial month is billed at the moment you drop them. Check the student's **Enrollments** tab.
+  </Accordion>
+
+  <Accordion title="The course's fee plan bills per session">
+    A **Per session** fee plan is billed after the month ends, for the classes counted under your **Consumption rule**. If no classes were counted, there's no invoice. Cancelled classes are never charged.
+
+    Cohort only creates these invoices automatically when your **Billing mode** is **Postpaid — billed in arrears**. Under **Prepaid — billed in advance**, contact Cohort support, or [create the invoices by hand](/en/admin/invoices/create-an-invoice).
+  </Accordion>
+
+  <Accordion title="The invoice was voided">
+    Cohort doesn't create a replacement for a voided automatic invoice. To bill that period, [create an invoice by hand](/en/admin/invoices/create-an-invoice).
+  </Accordion>
+
+  <Accordion title="It's there, but you can't find it">
+    - The **Invoices** list may be filtered. Select **Clear filters**.
+    - The student's page lists every invoice they have on the **Billing** tab.
+    - If the student says they can't see it, check its status. A **Draft** invoice isn't visible to the student until it's issued: see [Issue an invoice](/en/admin/invoices/issue-an-invoice).
+  </Accordion>
+</AccordionGroup>
+
+## The amount looks wrong
+
+<AccordionGroup>
+  <Accordion title="The first invoice is lower than the fee plan">
+    Under **Calendar month**, a student who joins partway through a month pays only for the part they attend, following the **Default proration**. The line's description ends with the share charged, for example "(prorated 8/12)": 8 of the month's 12 classes, or days.
+
+    Under **Enrollment anniversary**, a first invoice is never reduced this way: every cycle is a whole one.
+  </Accordion>
+
+  <Accordion title="It's lower for another reason">
+    - A standing discount on the student's enrollment is applied automatically to every invoice Cohort creates for it. See [Give a standing discount](/en/admin/students/standing-discount).
+    - If **Auto-apply wallet credit** is on, money in the student's wallet is used straight away. The **Total** stays the same, but **Paid** shows the credit and the **Balance** is lower. See [Student wallet](/en/admin/students/student-wallet).
+  </Accordion>
+
+  <Accordion title="It's higher than the fee plan">
+    If your billing policy has **Late fees** turned on, Cohort adds a late-fee line to an overdue invoice. See [How invoicing works](/en/admin/invoices/how-invoicing-works).
+  </Accordion>
+
+  <Accordion title="A per-session invoice has an unexpected total">
+    The total is the number of classes counted, times the plan's price per session. Which classes count depends on the **Consumption rule**: **Attended + unexcused**, **All scheduled** or **Attended only**.
+  </Accordion>
+
+  <Accordion title="It still has the old price">
+    Each invoice keeps the price the fee plan had when the invoice was created. After you change a fee plan's price, only new invoices use it.
+  </Accordion>
+</AccordionGroup>
+
+## Fix the invoice
+
+You can't change the lines of an invoice once it's issued. Instead:
+
+- To reduce it, [issue a credit note](/en/admin/invoices/issue-a-credit-note) for the difference, or [apply a discount](/en/admin/invoices/apply-a-discount).
+- To replace it completely, [void it](/en/admin/invoices/void-an-invoice) and [create the correct one by hand](/en/admin/invoices/create-an-invoice).
+
+By default, owners and admins can do these.
+
+<Warning>
+  Voiding is irreversible, and Cohort won't create the automatic invoice again for that period. Create the replacement yourself.
+</Warning>

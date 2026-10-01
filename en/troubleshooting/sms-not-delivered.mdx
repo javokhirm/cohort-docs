@@ -1,0 +1,86 @@
+---
+title: "An SMS wasn't delivered"
+description: "Find out why an SMS didn't reach a student or parent: check the outbox, template approval, the SMS switch and the daily cap."
+icon: "message-square"
+keywords: ["SMS not received", "outbox", "template approval", "moderation", "daily limit"]
+---
+
+By default, owners and admins can open **Notifications** in the sidebar to see what Cohort sent. Only the owner sees the **Settings** tab, where SMS is switched on and off.
+
+## Start with the outbox
+
+<Steps>
+  <Step title="Open the outbox">
+    In the sidebar, select **Notifications**, then open the **Outbox** tab.
+  </Step>
+  <Step title="Narrow it down">
+    Choose a period, **Today**, **7 days**, **30 days** or **All time**, and a status if you like.
+  </Step>
+  <Step title="Find the message">
+    Look for the recipient's name or phone number, and check its status.
+  </Step>
+</Steps>
+
+| Status | What it means |
+| --- | --- |
+| **Queued** | Waiting to go out. Messages held back by the daily cap, or while SMS is off, wait here. |
+| **Sending** | Being handed to the SMS gateway right now. |
+| **Sent** | The SMS gateway accepted the message. |
+| **Failed** | The message wasn't sent. The reason is shown under it, next to **Retry**. |
+
+**Retry** sends the same text to the same number again. The reason under a failed message isn't translated: it's in English, or in Russian when it comes from the SMS gateway.
+
+If the message isn't in the outbox at all, see "Nothing in the outbox" at the end of this page.
+
+## Common causes
+
+<AccordionGroup>
+  <Accordion title="The template isn't approved">
+    SMS gateways in Uzbekistan only deliver text they've approved in advance. Each time a template is saved, Cohort sends its text to the gateway for approval. Until it's approved, messages using that text fail, and the reason in the outbox says, in Russian, that the text hasn't passed moderation.
+
+    To check, open the **Templates** tab. A template that can't be sent yet has an icon next to it. Select the template to see its status under **SMS gateway approval**:
+
+    - **In review**: the gateway is still checking the text. Wait until it's **Approved**, then select **Retry** on the failed messages.
+    - **Rejected**: the gateway refused the text. Change the text, then select **Save template**. Saving the same text again won't help.
+    - **Not submitted**: Cohort couldn't reach the gateway. Open the template and select **Save template** again.
+
+    The **Templates** tab only lists templates that a rule which is switched on uses.
+  </Accordion>
+
+  <Accordion title="SMS is switched off">
+    At the top of the **Notifications** page, the owner sees **SMS off**. While SMS is off:
+
+    - Rules don't create messages, and those messages aren't sent later, even after SMS is switched back on.
+    - Messages that were already **Queued** wait, and go out once SMS is on again.
+
+    To switch it on, the owner opens the **Settings** tab, turns on the switch in the **SMS channel** card, then selects **Save**.
+  </Accordion>
+
+  <Accordion title="The daily cap was reached">
+    The **Settings** tab can set a **Daily cap (messages)**. At the top of the page, the owner sees how many messages went out today against the cap, for example *120 / 120 today*.
+
+    Once the cap is reached, Cohort holds the rest back: they stay **Queued** and go out from the start of the next day. Raising the cap doesn't send them any sooner.
+
+    To change the cap, the owner enters a new number in **Daily cap (messages)**, or leaves it empty for no cap, then selects **Save**.
+  </Accordion>
+
+  <Accordion title="“SMS is enabled but nothing can send — the provider details are incomplete.”">
+    SMS is on, but Cohort has no working SMS account to send from, so messages fail. At the top of the page, the owner sees **SMS misconfigured**.
+
+    If your center uses its own Eskiz account, check **Provider login** and **Provider secret** on the **Settings** tab. Otherwise, contact Cohort support.
+  </Accordion>
+
+  <Accordion title="The phone number is wrong">
+    The message failed, and the reason names the phone number it tried. Correct the number on the student's or guardian's record. Messages from then on go to the new number.
+
+    **Retry** won't help for a message that already failed: it sends to the same old number.
+  </Accordion>
+</AccordionGroup>
+
+## Nothing in the outbox
+
+If the message isn't in the outbox at all, Cohort never created it. This happens when:
+
+- SMS was switched off at the time.
+- The rule is off. On the **Rules** tab, check that the rule's switch is on. A rule that's off sends nothing.
+- The recipient has no phone number. Who receives a message depends on the rule's **Recipients**. Messages for a **Parent** go to the student's primary guardian, so a student with no primary guardian, or whose primary guardian has no phone, gets nothing. See [Manage guardians](/en/admin/students/guardians).

@@ -85,6 +85,7 @@ docs.json            Mintlify config + navigation (one entry per language)
 uz/ ru/ en/          pages — identical relative paths in each locale
   index.mdx          help center home
   getting-started/   for everyone: apps and roles, signing in
+  troubleshooting/   symptom pages ("why doesn't … work?") that span apps and areas
   admin/<area>/      Staff console, one folder per sidebar item
   teacher/<area>/    Teacher console
   student/<area>/    Student console
@@ -102,6 +103,9 @@ scripts/             check-i18n.mjs (locale parity), check-labels.mjs (labels vs
 - **Tabs = apps**, labelled with the app's name from its sign-in screen (`auth.staffConsole`,
   `auth.teacherConsole`, `auth.studentConsole`), plus a first "Get started" tab. Add an app's
   tab only once its first page exists.
+- **Troubleshooting pages** live in `troubleshooting/` and are listed in their own
+  "Troubleshooting" group in the "Get started" tab, not under an app tab. A problem that
+  belongs to one screen can still be an accordion on that screen's page; link the two.
 - **Groups = sidebar items.** Inside an app tab, one group per sidebar item, in the app's
   sidebar order, labelled with the exact sidebar label (`nav.item.*`) for that locale.
 - **Folders and slugs are English kebab-case**, identical in every locale:

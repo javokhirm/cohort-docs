@@ -1,0 +1,51 @@
+---
+title: "The guardian's phone number is already registered"
+description: "What to do when Cohort says a guardian's phone number already belongs to someone at your center."
+icon: "phone"
+keywords: ["duplicate phone", "parent phone", "Existing guardian found", "already registered"]
+---
+
+Cohort keeps one record per guardian, so a parent with several children at your center is entered once. When you enter a **Parent / Guardian phone** that already belongs to a guardian at your center, Cohort offers to connect that person instead of creating someone new. Phone matching is explained in [Manage guardians](/en/admin/students/guardians).
+
+By default, owners and admins can add and edit guardians.
+
+<AccordionGroup>
+  <Accordion title="“Existing guardian found”">
+    The number belongs to a guardian of another student at your center, listed under **Connected students**. This is usually a brother's or sister's parent.
+
+    If it's the same person, choose the **Relation**, then select **Connect guardian**. If it's someone else, see "The number belongs to a different person" below.
+  </Accordion>
+
+  <Accordion title="“This number is already registered. Connect the guardian or clear the number.”">
+    Cohort found a guardian with this number, and you tried to save without connecting them. Either select **Connect guardian**, or clear the number and add the guardian without a phone.
+  </Accordion>
+
+  <Accordion title="The number belongs to a different person">
+    The other guardian's record has the wrong number, for example because of a typo, or because the phone now belongs to someone else. Fix that record first:
+
+    1. Note a student under **Connected students**, then close the form.
+    2. Open that student's page and go to the **Guardians** tab. Select the guardian to open **Guardian details**.
+    3. Select the pencil button, change **Phone** to their correct number, then select **Save**.
+    4. Go back to your student and enter the number again. Cohort now shows **New guardian**.
+  </Accordion>
+
+  <Accordion title="Two parents share one phone">
+    Cohort won't create a second guardian with a number another guardian already has. Connect the guardian who has it, and add the other parent without a phone number.
+  </Accordion>
+
+  <Accordion title="“Existing record found”">
+    The number belongs to someone who used to be a guardian at your center, but isn't connected to any student now. If it's the same person, connect them the same way.
+  </Accordion>
+
+  <Accordion title="“A guardian with this phone number already exists. Link the existing guardian instead of creating a new one.”">
+    The number was registered after Cohort checked it, for example because a colleague added the same parent at the same moment. Clear the number and enter it again so Cohort finds the guardian, then select **Connect guardian**.
+  </Accordion>
+
+  <Accordion title="“Already connected”">
+    This person is already a guardian of this student. There's nothing to add.
+  </Accordion>
+</AccordionGroup>
+
+<Note>
+  Only guardians count as a match. If a staff member or a student has the same phone number, Cohort doesn't stop you: the guardian is added as a new person.
+</Note>
