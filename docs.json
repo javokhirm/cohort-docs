@@ -114,6 +114,10 @@
 								]
 							},
 							{
+								"group": "Xarajatlar",
+								"pages": ["uz/admin/expenses/record-an-expense"]
+							},
+							{
 								"group": "Filiallar",
 								"pages": [
 									"uz/admin/branches/how-branches-work",
@@ -213,6 +217,10 @@
 								]
 							},
 							{
+								"group": "Расходы",
+								"pages": ["ru/admin/expenses/record-an-expense"]
+							},
+							{
 								"group": "Филиалы",
 								"pages": [
 									"ru/admin/branches/how-branches-work",
@@ -310,6 +318,10 @@
 									"en/admin/discounts/discount-types",
 									"en/admin/discounts/create-a-discount"
 								]
+							},
+							{
+								"group": "Expenses",
+								"pages": ["en/admin/expenses/record-an-expense"]
 							},
 							{
 								"group": "Branches",
