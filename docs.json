@@ -107,8 +107,18 @@
 								"pages": ["uz/admin/fee-plans/add-a-fee-plan"]
 							},
 							{
+								"group": "Chegirmalar",
+								"pages": [
+									"uz/admin/discounts/discount-types",
+									"uz/admin/discounts/create-a-discount"
+								]
+							},
+							{
 								"group": "Filiallar",
-								"pages": ["uz/admin/branches/add-a-branch"]
+								"pages": [
+									"uz/admin/branches/how-branches-work",
+									"uz/admin/branches/add-a-branch"
+								]
 							}
 						]
 					}
@@ -196,8 +206,18 @@
 								"pages": ["ru/admin/fee-plans/add-a-fee-plan"]
 							},
 							{
+								"group": "Скидки",
+								"pages": [
+									"ru/admin/discounts/discount-types",
+									"ru/admin/discounts/create-a-discount"
+								]
+							},
+							{
 								"group": "Филиалы",
-								"pages": ["ru/admin/branches/add-a-branch"]
+								"pages": [
+									"ru/admin/branches/how-branches-work",
+									"ru/admin/branches/add-a-branch"
+								]
 							}
 						]
 					}
@@ -285,8 +305,18 @@
 								"pages": ["en/admin/fee-plans/add-a-fee-plan"]
 							},
 							{
+								"group": "Discounts",
+								"pages": [
+									"en/admin/discounts/discount-types",
+									"en/admin/discounts/create-a-discount"
+								]
+							},
+							{
 								"group": "Branches",
-								"pages": ["en/admin/branches/add-a-branch"]
+								"pages": [
+									"en/admin/branches/how-branches-work",
+									"en/admin/branches/add-a-branch"
+								]
 							}
 						]
 					}

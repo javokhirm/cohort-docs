@@ -1,0 +1,48 @@
+---
+title: "Create a discount"
+description: "Create a reusable discount, as a percentage or a fixed amount, that you can apply to invoices or attach to enrollments."
+icon: "tag"
+keywords:
+  - "promo code"
+  - "percentage discount"
+  - "fixed amount discount"
+---
+
+import RoleHint from "/snippets/en/role-hint.mdx";
+
+Create a discount once, then use it as a one-off on individual invoices or as a standing discount on enrollments — see [discount types](/en/admin/discounts/discount-types).
+
+By default, only owners and admins can create discounts.
+
+<RoleHint />
+
+## Create the discount
+
+<Steps>
+  <Step title="Open the form">
+    In the sidebar, select **Discounts**, then select **New discount**.
+  </Step>
+  <Step title="Name it">
+    Enter a **Discount name** you'll recognize later, such as *Sibling discount* or *Autumn promo*.
+  </Step>
+  <Step title="Set the type and value">
+    Choose **Type** — **Percentage** or **Fixed amount** — then enter **Value**. A percentage can't go over 100; a fixed amount is in UZS.
+  </Step>
+  <Step title="Add a promo code (optional)">
+    Enter a **Promo code** if you want one — no two discounts can share the same code.
+  </Step>
+  <Step title="Set a validity window (optional)">
+    Choose **Valid from** and/or **Valid until** to limit when the discount can be applied. Leave either blank for no limit on that side.
+  </Step>
+  <Step title="Save" />
+</Steps>
+
+<Note>
+  To change a discount or turn it off, select the pencil button on it in the list, update the fields — including **Status** — and select **Save discount**. A discount can't be deleted, only turned off, and turning it off doesn't change invoices or enrollments it's already applied to.
+</Note>
+
+## What's next
+
+- [Discount types: one-off vs standing](/en/admin/discounts/discount-types)
+- [Apply a discount to an invoice](/en/admin/invoices/apply-a-discount)
+- [Give a standing discount](/en/admin/students/standing-discount)
